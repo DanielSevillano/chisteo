@@ -1,0 +1,47 @@
+[
+    {
+        "dia": "L16",
+        "chistes": 17,
+        "aproximacion": 15
+    },
+    {
+        "dia": "X18",
+        "chistes": 12,
+        "aproximacion": 14
+    },
+    {
+        "dia": "V20",
+        "chistes": 8,
+        "aproximacion": 10
+    },
+    {
+        "dia": "L23",
+        "chistes": 15,
+        "aproximacion": 16
+    },
+    {
+        "dia": "X25",
+        "chistes": 11,
+        "aproximacion": 12
+    },
+    {
+        "dia": "V27",
+        "chistes": 2,
+        "aproximacion": 11
+    },
+    {
+        "dia": "L30",
+        "chistes": 1,
+        "aproximacion": 6
+    },
+    {
+        "dia": "X1",
+        "chistes": 7,
+        "aproximacion": 8
+    },
+    {
+        "dia": "V3",
+        "chistes": 10,
+        "aproximacion": 10
+    }
+]
