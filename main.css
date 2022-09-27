@@ -105,7 +105,7 @@ main {
 
 footer {
     gap: 10px;
-    padding: 10px 30px 30px 30px;
+    padding: 10px 30px 20px 30px;
     background-color: var(--surface-variant);
     color: var(--on-surface-variant);
     border-radius: 20px 20px 0 0;
