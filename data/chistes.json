@@ -190,5 +190,9 @@
     {
         "autor": "Jacque",
         "chiste": "<img src='img/chisteo-jacque-4.jpg' alt='Chisteo Jacque 4' loading='lazy'>"
+    },
+    {
+        "autor": "Dani",
+        "chiste": "<p>— Señora, disculpe pero su vuelo viene demorado.</p><p>— Ay qué emoción, ¡es mi color favorito!</p>"
     }
 ]
