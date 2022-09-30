@@ -194,5 +194,21 @@
     {
         "autor": "Dani",
         "chiste": "<p>— Señora, disculpe pero su vuelo viene demorado.</p><p>— Ay qué emoción, ¡es mi color favorito!</p>"
+    },
+    {
+        "autor": "Jesús",
+        "chiste": "<p>— Mamá mamá, en el colegio me llaman campana.</p><p>— ¿Sí? ¿Y eso hijo mío?</p><p>— Nada, tolonterías de la gente.</p>"
+    },
+    {
+        "autor": "Jorge",
+        "chiste": "<img src='img/chisteo-jorge-6.jpg' alt='Chisteo Jorge 6' loading='lazy'>"
+    },
+    {
+        "autor": "Jesús",
+        "chiste": "<p>Se abre el telón y se ven una pera, una manzana, un melocotón y una piña dándose de hostias.</p><p>Se cierra el telón. ¿Cómo se llama la película?</p><p>Frutas too furious.</p>"
+    },
+    {
+        "autor": "Jesús",
+        "chiste": "<p>¿Qué le pasa a un garbanzo cuando se fuma un porro?</p><p>Que se va de la olla.</p>"
     }
 ]
