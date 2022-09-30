@@ -90,7 +90,8 @@ header {
     border-radius: 0 0 20px 20px;
 }
 
-main, footer {
+main,
+footer {
     display: flex;
     flex-direction: column;
     max-width: 100ch;
@@ -254,7 +255,8 @@ label {
     font-weight: bold;
 }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
     box-sizing: border-box;
     padding: 10px;
     background-color: var(--surface);
@@ -269,7 +271,8 @@ textarea {
     font-family: inherit;
 }
 
-input:focus-visible, textarea:focus-visible {
+input:focus-visible,
+textarea:focus-visible {
     outline-color: var(--secondary);
 }
 

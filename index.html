@@ -1,133 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="La página del chisteo, donde se vive por y para el chisteo.">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="main.css">
-    <title>Chisteo</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="La página del chisteo, donde se vive por y para el chisteo."
+        />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" href="main.css" />
+        <title>Chisteo</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
-    <script src="main.js" async></script>
-</head>
-<body>  
-    <header>
-        <h1>🤪 Chisteo</h1>
-    </header>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+        <script src="main.js" async></script>
+    </head>
+    <body>
+        <header>
+            <h1>🤪 Chisteo</h1>
+        </header>
 
-    <main>
-        <section>
-            <p>Bienvenido a la página del chisteo, donde se vive por y para el chisteo.</p>
-            <p>Si no sabes qué es el chisteo, no te preocupes.
-                El chisteo es como el aire que nos rodea: aunque muchos no alcancemos a comprender qué es y de qué está compuesto, todos podemos sentirlo.
-                Lo importante no es conocer el chisteo, sino sentir el chisteo como si no hubiera un mañana.</p>
-            <p>Espero que te puedas sumergir en este sentimiento que mueve montañas y disfrutes de esta página tanto como nosotros.
-                Está hecha con todo el cariño del mundo.</p>
-            <blockquote></blockquote>
-        </section>
+        <main>
+            <section>
+                <p>
+                    Bienvenido a la página del chisteo, donde se vive por y para
+                    el chisteo.
+                </p>
+                <p>
+                    Si no sabes qué es el chisteo, no te preocupes. El chisteo
+                    es como el aire que nos rodea: aunque muchos no alcancemos a
+                    comprender qué es y de qué está compuesto, todos podemos
+                    sentirlo. Lo importante no es conocer el chisteo, sino
+                    sentir el chisteo como si no hubiera un mañana.
+                </p>
+                <p>
+                    Espero que te puedas sumergir en este sentimiento que mueve
+                    montañas y disfrutes de esta página tanto como nosotros.
+                    Está hecha con todo el cariño del mundo.
+                </p>
+                <blockquote></blockquote>
+            </section>
 
-        <section>
-            <h1>📈 Gráficas del chisteo</h1>
+            <section>
+                <h1>📈 Gráficas del chisteo</h1>
 
-            <h2>Gráfica de junio</h2>
-            <div class="contenedor-grafica">
-                <canvas id="grafica-junio" width="400" height="200"></canvas>
-            </div>
-
-            <h2>Gráfica de septiembre</h2>
-            <div class="contenedor-grafica">
-                <canvas id="grafica-septiembre" width="400" height="200"></canvas>
-            </div>
-        </section>
-
-        <section>
-            <h1>🏆 Ranking del chisteo</h1>
-            <div class="contenedor-grafica">
-                <canvas id="grafica-ranking" width="400" height="300"></canvas>
-            </div>
-        </section>
-
-        <section>
-            <h1>📖 Chisteo del pueblo</h1>
-            <div class="contenedor-filtros">
-                <button class="seleccionado">Todos</button>
-            </div>
-
-            <div class="contenedor-chistes">
-                <template plantilla>
-                    <article>
-                        <div contenido></div>
-                        <div>
-                            <small numero></small>
-                            <p autor></p>
-                        </div>
-                    </article>
-                </template>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <section>
-            <h1>Yo chisteo, nosotros chisteamos</h1>
-            <p>¿Quieres chistear y no sabes cómo hacerlo?
-                Considera formar parte del chisteo del pueblo enviándonos tus chistes.</p>
-            <p>Todos son bienvenidos, buenos y malos, bonitos y feos.
-                Como decía Abraham Lincoln, todos los chistes nacen iguales, pero es la última vez que lo son.</p>
-            <p>Si en cambio eres un experto en el chisteo y sabes algo que nosotros no sabemos, no dudes en enviarnos sugerencias para mejorar este rincón.</p>
-        </section>
-        
-        <section>
-            <h2>Formulario del chisteo</h2>
-            <p>Puedes rellenar este formulario para colaborar con el chisteo y aparecer en la página.
-                Recuerda que no es necesario completarlo entero, todos los campos son opcionales, así que envía solo aquello que quieras.</p>
-            <form name="chisteo" method="POST" data-netlify="true">
-                <div class="contenedor-formulario">
-                    <div>
-                        <label for="nombre">Nombre del chistoso</label>
-                        <input type="text" id="nombre" name="nombre" />
-                    </div>
-
-                    <div>
-                        <label for="archivo">Chiste en archivo</label>
-                        <input type="file" name="archivo" id="archivo">
-                    </div>
-
-                    <div>
-                        <label for="chiste">Chiste escrito</label>
-                        <textarea id="chiste" name="chiste"></textarea>
-                    </div>
-                    
-                    <div>
-                        <label for="sugerencias">Sugerencias para el chisteo</label>
-                        <textarea id="sugerencias" name="sugerencias"></textarea>
-                    </div>
+                <h2>Gráfica de junio</h2>
+                <div class="contenedor-grafica">
+                    <canvas
+                        id="grafica-junio"
+                        width="400"
+                        height="200"
+                    ></canvas>
                 </div>
 
-                <button type="submit">Enviar</button>
-              </form>
-        </section>
+                <h2>Gráfica de septiembre</h2>
+                <div class="contenedor-grafica">
+                    <canvas
+                        id="grafica-septiembre"
+                        width="400"
+                        height="200"
+                    ></canvas>
+                </div>
+            </section>
 
-        <section>
-            <h2>Agradecimientos</h2>
-            <ul>
-                <li><b>Antonio</b>, por darle sentido al chisteo.</li>
-                <li><b>Álvaro y Jacque</b>, por crear por accidente el nombre del chisteo.</li>
-                <li><b>Jacque, Jorge y Daniel</b>, por llevar el chisteo cada día.</li>
-                <li><b>Jorge</b>, por hacer la gráfica del chisteo.</li>
-                <li><b>Pineda</b>, por cuidar del perro del chisteo.</li>
-                <li><b>Stallone</b>, por regalarnos Rocky V.</li>
-                <li><b>Daniel</b>, por hacer esta página web.</li>
-                <li><b><a href="https://chisteo.blogspot.com">El blog del chisteo</a></b>, por servir de inspiración para esta página.</li>
-                <li>Todos los que han participado en el chisteo de una forma u otra, por formar parte de esto.</li>
-            </ul>
-        </section>
+            <section>
+                <h1>🏆 Ranking del chisteo</h1>
+                <div class="contenedor-grafica">
+                    <canvas
+                        id="grafica-ranking"
+                        width="400"
+                        height="300"
+                    ></canvas>
+                </div>
+            </section>
 
-        <section>
-            <p style="text-align: center;">🧐 Código fuente de la página web disponible en <a href="https://github.com/DanielSevillano/chisteo">GitHub</a></p>
-        </section>
-    </footer>
-</body>
+            <section>
+                <h1>📖 Chisteo del pueblo</h1>
+                <div class="contenedor-filtros">
+                    <button class="seleccionado">Todos</button>
+                </div>
+
+                <div class="contenedor-chistes">
+                    <template plantilla>
+                        <article>
+                            <div contenido></div>
+                            <div>
+                                <small numero></small>
+                                <p autor></p>
+                            </div>
+                        </article>
+                    </template>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section>
+                <h1>Yo chisteo, nosotros chisteamos</h1>
+                <p>
+                    ¿Quieres chistear y no sabes cómo hacerlo? Considera formar
+                    parte del chisteo del pueblo enviándonos tus chistes.
+                </p>
+                <p>
+                    Todos son bienvenidos, buenos y malos, bonitos y feos. Como
+                    decía Abraham Lincoln, todos los chistes nacen iguales, pero
+                    es la última vez que lo son.
+                </p>
+                <p>
+                    Si en cambio eres un experto en el chisteo y sabes algo que
+                    nosotros no sabemos, no dudes en enviarnos sugerencias para
+                    mejorar este rincón.
+                </p>
+            </section>
+
+            <section>
+                <h2>Formulario del chisteo</h2>
+                <p>
+                    Puedes rellenar este formulario para colaborar con el
+                    chisteo y aparecer en la página. Recuerda que no es
+                    necesario completarlo entero, todos los campos son
+                    opcionales, así que envía solo aquello que quieras.
+                </p>
+                <form name="chisteo" method="POST" data-netlify="true">
+                    <div class="contenedor-formulario">
+                        <div>
+                            <label for="nombre">Nombre del chistoso</label>
+                            <input type="text" id="nombre" name="nombre" />
+                        </div>
+
+                        <div>
+                            <label for="archivo">Chiste en archivo</label>
+                            <input type="file" name="archivo" id="archivo" />
+                        </div>
+
+                        <div>
+                            <label for="chiste">Chiste escrito</label>
+                            <textarea id="chiste" name="chiste"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="sugerencias"
+                                >Sugerencias para el chisteo</label
+                            >
+                            <textarea
+                                id="sugerencias"
+                                name="sugerencias"
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>Agradecimientos</h2>
+                <ul>
+                    <li><b>Antonio</b>, por darle sentido al chisteo.</li>
+                    <li>
+                        <b>Álvaro y Jacque</b>, por crear por accidente el
+                        nombre del chisteo.
+                    </li>
+                    <li>
+                        <b>Jacque, Jorge y Daniel</b>, por llevar el chisteo
+                        cada día.
+                    </li>
+                    <li><b>Jorge</b>, por hacer la gráfica del chisteo.</li>
+                    <li><b>Pineda</b>, por cuidar del perro del chisteo.</li>
+                    <li><b>Stallone</b>, por regalarnos Rocky V.</li>
+                    <li><b>Daniel</b>, por hacer esta página web.</li>
+                    <li>
+                        <b
+                            ><a href="https://chisteo.blogspot.com"
+                                >El blog del chisteo</a
+                            ></b
+                        >, por servir de inspiración para esta página.
+                    </li>
+                    <li>
+                        Todos los que han participado en el chisteo de una forma
+                        u otra, por formar parte de esto.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <p style="text-align: center">
+                    🧐 Código fuente de la página web disponible en
+                    <a href="https://github.com/DanielSevillano/chisteo"
+                        >GitHub</a
+                    >
+                </p>
+            </section>
+        </footer>
+    </body>
 </html>
