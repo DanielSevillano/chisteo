@@ -210,5 +210,9 @@
     {
         "autor": "Jesús",
         "chiste": "<p>¿Qué le pasa a un garbanzo cuando se fuma un porro?</p><p>Que se va de la olla.</p>"
+    },
+    {
+        "autor": "Jacque",
+        "chiste": "<img src='img/chisteo-jacque-5.jpg' alt='Chisteo Jacque 5' loading='lazy'>"
     }
 ]
