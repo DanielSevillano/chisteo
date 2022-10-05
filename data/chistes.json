@@ -218,5 +218,9 @@
     {
         "autor": "María",
         "chiste": "<p>— Es mejor mantener nuestro amor en secreto.</p><p>— Yo no te quiero.</p><p>— Esa es la actitud.</p>"
+    },
+    {
+        "autor": "Jesús",
+        "chiste": "<audio controls><source src='audio/chisteo-jesus-7.mp3' type='audio/mpeg'></audio>"
     }
 ]
