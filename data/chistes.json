@@ -214,5 +214,9 @@
     {
         "autor": "Jacque",
         "chiste": "<img src='img/chisteo-jacque-5.jpg' alt='Chisteo Jacque 5' loading='lazy'>"
+    },
+    {
+        "autor": "María",
+        "chiste": "<p>— Es mejor mantener nuestro amor en secreto.</p><p>— Yo no te quiero.</p><p>— Esa es la actitud.</p>"
     }
 ]
