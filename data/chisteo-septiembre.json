@@ -38,5 +38,10 @@
         "dia": "L3",
         "chistes": 5,
         "aproximacion": 6
+    },
+    {
+        "dia": "X5",
+        "chistes": 8,
+        "aproximacion": 8
     }
 ]
