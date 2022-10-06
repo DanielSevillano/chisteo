@@ -120,7 +120,7 @@
         "chiste": "<img src='img/chisteo-rau-5.jpg' alt='Chisteo Rau 5' loading='lazy'>"
     },
     {
-        "autor": "Javi",
+        "autor": "Javi V",
         "chiste": "<p>— ¡Socorro! ¿Hay algún doctor en la sala?</p><p>— Yo soy doctor en matemáticas.</p><p>— Ayúdeme, mi amigo se muere.</p><p>— Uno menos.</p>"
     },
     {
@@ -222,5 +222,29 @@
     {
         "autor": "Jesús",
         "chiste": "<audio controls><source src='audio/chisteo-jesus-7.mp3' type='audio/mpeg'></audio>"
+    },
+    {
+        "autor": "Javi A",
+        "chiste": "<p>¿Qué colonia usa Batman?</p><p>Superfume.</p>"
+    },
+    {
+        "autor": "Dani",
+        "chiste": "<img src='img/chisteo-dani-8.jpg' alt='Chisteo Dani 8' loading='lazy'>"
+    },
+    {
+        "autor": "Javi A",
+        "chiste": "<img src='img/chisteo-javi-a-2.jpg' alt='Chisteo Javi A 2' loading='lazy'>"
+    },
+    {
+        "autor": "Carmelina",
+        "chiste": "<img src='img/chisteo-carmelina-1.jpg' alt='Chisteo Carmelina 1' loading='lazy'>"
+    },
+    {
+        "autor": "Joselu",
+        "chiste": "<img src='img/chisteo-joselu-1.jpeg' alt='Chisteo Joselu 1' loading='lazy'>"
+    },
+    {
+        "autor": "Joselu",
+        "chiste": "<img src='img/chisteo-joselu-2.jpg' alt='Chisteo Joselu 2' loading='lazy'>"
     }
 ]
