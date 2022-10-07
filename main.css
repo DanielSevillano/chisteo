@@ -202,8 +202,8 @@ audio {
 
 /* Botones */
 
-button {
-    padding: 8px 24px;
+button,
+input::file-selector-button {
     border-radius: 20px;
     background-color: var(--secondary);
     border-color: transparent;
@@ -211,7 +211,18 @@ button {
     transition: background-color 200ms;
 }
 
-button:hover {
+button {
+    padding: 8px 24px;
+}
+
+input::file-selector-button {
+    padding: 4px 10px;
+}
+
+button:hover,
+input::file-selector-button:hover {
+    background-color: var(--primary);
+    color: var(--on-primary);
     cursor: pointer;
 }
 
@@ -237,14 +248,8 @@ button:hover {
 }
 
 form > button {
-    width: fit-content;
     margin-inline: auto;
     font-weight: bold;
-}
-
-form > button:hover {
-    background-color: var(--primary);
-    color: var(--on-primary);
 }
 
 /* Formulario */
