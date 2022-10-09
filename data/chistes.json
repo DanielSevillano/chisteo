@@ -246,5 +246,9 @@
     {
         "autor": "Joselu",
         "chiste": "<img src='img/chisteo-joselu-2.jpg' alt='Chisteo Joselu 2' loading='lazy'>"
+    },
+    {
+        "autor": "Joselu",
+        "chiste": "<img src='img/chisteo-joselu-3.jpeg' alt='Chisteo Joselu 3' loading='lazy'>"
     }
 ]
