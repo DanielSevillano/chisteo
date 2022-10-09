@@ -250,5 +250,17 @@
     {
         "autor": "Joselu",
         "chiste": "<img src='img/chisteo-joselu-3.jpeg' alt='Chisteo Joselu 3' loading='lazy'>"
+    },
+    {
+        "autor": "Jacque",
+        "chiste": "<img src='img/chisteo-jacque-6.jpg' alt='Chisteo Jacque 6' loading='lazy'>"
+    },
+    {
+        "autor": "Ana",
+        "chiste": "<p>— ¿Te gustaría que te contara un chiste de estadística?</p><p>— Probablemente.</p>"
+    },
+    {
+        "autor": "Ana",
+        "chiste": "<p>¿Qué le dice el 2 al 0?</p><p>Veinte conmigo.</p>"
     }
 ]
