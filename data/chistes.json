@@ -266,5 +266,9 @@
     {
         "autor": "Ana",
         "chiste": "<p>Te contaría un chiste de química pero no sé cuál sería tu reacción.</p>"
+    },
+    {
+        "autor": "Joselu",
+        "chiste": "<video controls><source src='video/chisteo-joselu-4.mp4' type='video/mp4'></video>"
     }
 ]

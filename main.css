@@ -185,7 +185,8 @@ button.seleccionado small {
 /* Multimedia */
 
 img,
-audio {
+audio,
+video {
     display: block;
     margin: 1em auto;
 }
@@ -198,6 +199,12 @@ img {
 
 audio {
     max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
 }
 
 /* Botones */
