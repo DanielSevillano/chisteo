@@ -270,5 +270,9 @@
     {
         "autor": "Joselu",
         "chiste": "<video controls><source src='video/chisteo-joselu-4.mp4' type='video/mp4'></video>"
+    },
+    {
+        "autor": "María",
+        "chiste": "<p>¿Qué le dice un globo a un cactusssssssssss...?</p>"
     }
 ]
