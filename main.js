@@ -109,7 +109,7 @@ async function datosChistes() {
         });
     });
 
-    ranking.slice(0, 6).forEach((puesto) => {
+    ranking.slice(0, 9).forEach((puesto) => {
         const autor = puesto[0];
         const numero = puesto[1];
 
@@ -123,14 +123,12 @@ async function datosChistes() {
 
         botonFiltro.addEventListener("click", () => {
             filtros.forEach((filtro) => {
-                if (filtro === botonFiltro)
-                    filtro.classList.add("seleccionado");
+                if (filtro === botonFiltro) filtro.classList.add("seleccionado");
                 else filtro.classList.remove("seleccionado");
             });
 
             elementosChiste.forEach((elemento) => {
-                if (elemento.autor !== autor)
-                    elemento.tarjeta.style.display = "none";
+                if (elemento.autor !== autor) elemento.tarjeta.style.display = "none";
                 else elemento.tarjeta.style.display = "flex";
             });
         });
