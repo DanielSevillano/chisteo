@@ -274,5 +274,21 @@
     {
         "autor": "María",
         "chiste": "<p>¿Qué le dice un globo a un cactusssssssssss...?</p>"
+    },
+    {
+        "autor": "Dani",
+        "chiste": "<img src='img/chisteo-dani-9.jpg' alt='Chisteo Dani 9' loading='lazy'>"
+    },
+    {
+        "autor": "Jacque",
+        "chiste": "<p>Molly Molly Molly.</p>"
+    },
+    {
+        "autor": "Dani",
+        "chiste": "<video controls><source src='video/chisteo-dani-10.mp4' type='video/mp4'></video>"
+    },
+    {
+        "autor": "Jacque",
+        "chiste": "<img src='img/chisteo-jacque-8.jpg' alt='Chisteo Jacque 8' loading='lazy'>"
     }
 ]
