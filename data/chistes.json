@@ -276,6 +276,10 @@
         "chiste": "<p>¿Qué le dice un globo a un cactusssssssssss...?</p>"
     },
     {
+        "autor": "Manu",
+        "chiste": "<p>El otro día en el trabajo les cambié las teclas N y M a unos compañeros. Algunos dirán que soy un monstruo, pero otros dirán que soy un nomstruo...</p>"
+    },
+    {
         "autor": "Dani",
         "chiste": "<img src='img/chisteo-dani-9.jpg' alt='Chisteo Dani 9' loading='lazy'>"
     },
@@ -290,5 +294,9 @@
     {
         "autor": "Jacque",
         "chiste": "<img src='img/chisteo-jacque-8.jpg' alt='Chisteo Jacque 8' loading='lazy'>"
+    },
+    {
+        "autor": "Jacque",
+        "chiste": "<p>Meneo.</p>"
     }
 ]
