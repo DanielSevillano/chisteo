@@ -316,6 +316,20 @@ Clases
     gap: 10px;
 }
 
+.contenedor-maneo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contenedor-maneo img {
+    margin: 0;
+    height: 200px;
+    width: auto;
+    max-width: none;
+}
+
 .contenedor-formulario {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
