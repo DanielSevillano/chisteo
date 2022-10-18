@@ -162,7 +162,24 @@ async function datosChistes() {
     });
 }
 
+async function imagenesManeo() {
+    const respuesta = await fetch("data/maneo.json");
+    const datos = await respuesta.json();
+
+    const contenedorManeo = document.querySelector(".contenedor-maneo");
+
+    datos.forEach((dato) => {
+        const nombre = dato.toLowerCase();
+        const imagen = document.createElement("img");
+        imagen.src = "img/maneo-" + nombre + ".jpg";
+        imagen.alt = "Maneo " + nombre;
+        imagen.setAttribute("loading", "lazy");
+        contenedorManeo.append(imagen);
+    });
+}
+
 fraseCelebre();
 graficaChisteo("data/chisteo-junio.json", "grafica-junio");
 graficaChisteo("data/chisteo-septiembre.json", "grafica-septiembre");
 datosChistes();
+imagenesManeo();
