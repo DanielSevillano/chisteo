@@ -68,5 +68,10 @@
         "dia": "X19",
         "chistes": 10,
         "aproximacion": 6
+    },
+    {
+        "dia": "J20",
+        "chistes": 8,
+        "aproximacion": 7
     }
 ]
