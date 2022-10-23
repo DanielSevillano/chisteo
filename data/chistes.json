@@ -302,5 +302,9 @@
     {
         "autor": "Javi A",
         "chiste": "<p>¿Cuál es el país natal de Batman?</p><p>El Baticano.</p>"
+    },
+    {
+        "autor": "Jorge",
+        "chiste": "<img src='img/chisteo-jorge-7.jpg' alt='Chisteo Jorge 7' loading='lazy'>"
     }
 ]
