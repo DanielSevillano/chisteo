@@ -308,6 +308,10 @@
         "chiste": "<img src='img/chisteo-jorge-7.jpg' alt='Chisteo Jorge 7' loading='lazy'>"
     },
     {
+        "autor": "Jorge",
+        "chiste": "<img src='img/chisteo-jorge-8.jpeg' alt='Chisteo Jorge 8' loading='lazy'>"
+    },
+    {
         "autor": "Javi A",
         "chiste": "<p>¿Cómo se llama la máquina de hacer Antonios?</p><p>Antonio Machín.</p>"
     },
