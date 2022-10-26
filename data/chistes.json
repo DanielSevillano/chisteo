@@ -306,5 +306,13 @@
     {
         "autor": "Jorge",
         "chiste": "<img src='img/chisteo-jorge-7.jpg' alt='Chisteo Jorge 7' loading='lazy'>"
+    },
+    {
+        "autor": "Javi A",
+        "chiste": "<p>¿Cómo se llama la máquina de hacer Antonios?</p><p>Antonio Machín.</p>"
+    },
+    {
+        "autor": "Triv",
+        "chiste": "<p>Esto es un profesor de matemáticas que llega a una clase de química y pregunta:</p><p>— ¿Cuándo decimos que una serie es convergente?</p><p>Un alumno avispado le responde:</p><p>— Cuando todos los términos convergen a cero.</p><p>— Entonces ¿cuándo es una serie absolutamente convergente?</p><p>— Cuando todos, absolutamente todos sus términos tienden a cero.</p>"
     }
 ]
