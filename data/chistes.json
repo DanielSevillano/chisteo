@@ -322,5 +322,9 @@
     {
         "autor": "Jorge",
         "chiste": "<img src='img/chisteo-jorge-9.jpg' alt='Chisteo Jorge 9' loading='lazy'>"
+    },
+    {
+        "autor": "María",
+        "chiste": "<p>¿Qué hay peor que encontrarse un gusano en una manzana?</p><p>Encontrarse medio.</p>"
     }
 ]
