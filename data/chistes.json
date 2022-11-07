@@ -326,5 +326,13 @@
     {
         "autor": "María",
         "chiste": "<p>¿Qué hay peor que encontrarse un gusano en una manzana?</p><p>Encontrarse medio.</p>"
+    },
+    {
+        "autor": "Jesús",
+        "chiste": "<audio controls><source src='audio/chisteo-jesus-8.mp3' type='audio/mpeg'></audio>"
+    },
+    {
+        "autor": "Jorge",
+        "chiste": "<p>Manolo va un día a la farmacia y pregunta:</p><p>— ¿Tenéis pastillas para la exageración?</p><p>— Sí. ¿Cuántas quieres?</p><p>— Deme 300.000.</p>"
     }
 ]
