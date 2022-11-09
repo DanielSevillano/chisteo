@@ -334,5 +334,9 @@
     {
         "autor": "Jorge",
         "chiste": "<p>Manolo va un día a la farmacia y pregunta:</p><p>— ¿Tenéis pastillas para la exageración?</p><p>— Sí. ¿Cuántas quieres?</p><p>— Deme 300.000.</p>"
+    },
+    {
+        "autor": "David",
+        "chiste": "<p>Van dos dados risueños caminando por la calle y de repente uno de ellos tropieza y se cae. Este se levanta y al momento el otro dado le empuja y vuelve a caerse, a lo que este le pregunta:</p><p>— ¿Por qué me has tirado?</p><p>A lo que responde el otro:</p><p>— Porque salió 6 así que había que tirar otra vez.</p>"
     }
 ]
