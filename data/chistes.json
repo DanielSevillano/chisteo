@@ -342,5 +342,9 @@
     {
         "autor": "Jacque",
         "chiste": "<p>— Manolo, entre pitos y flautas me he gastado 10000€.</p><p>— ¿Y eso Paco?</p><p>— Pues ya ves, 4000 en pitos y 6000 en flautas.</p>"
+    },
+    {
+        "autor": "Jorge",
+        "chiste": "<img src='img/chisteo-jorge-10.jpg' alt='Chisteo Jorge 10' loading='lazy'>"
     }
 ]
