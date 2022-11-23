@@ -133,5 +133,15 @@
         "dia": "J17",
         "chistes": 1,
         "aproximacion": 6
+    },
+    {
+        "dia": "L21",
+        "chistes": 6,
+        "aproximacion": 8
+    },
+    {
+        "dia": "X23",
+        "chistes": 9,
+        "aproximacion": 7
     }
 ]
