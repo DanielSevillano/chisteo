@@ -345,6 +345,10 @@
     },
     {
         "autor": "Jorge",
-        "chiste": "<img src='img/chisteo-jorge-10.jpg' alt='Chisteo Jorge 10' loading='lazy'>"
+        "chiste": "<img src='img/chisteo-jorge-11.jpg' alt='Chisteo Jorge 11' loading='lazy'>"
+    },
+    {
+        "autor": "Jesús",
+        "chiste": "<img src='img/chisteo-jesus-9.jpg' alt='Chisteo Jesús 9' loading='lazy'>"
     }
 ]
