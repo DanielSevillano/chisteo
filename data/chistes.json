@@ -350,5 +350,9 @@
     {
         "autor": "Jesús",
         "chiste": "<img src='img/chisteo-jesus-9.jpg' alt='Chisteo Jesús 9' loading='lazy'>"
+    },
+    {
+        "autor": "Javi A",
+        "chiste": "<img src='img/chisteo-javi-a-5.jpg' alt='Chisteo Javi A 5' loading='lazy'>"
     }
 ]
