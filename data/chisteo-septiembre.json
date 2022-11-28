@@ -148,5 +148,10 @@
         "dia": "J24",
         "chistes": 5,
         "aproximacion": 8
+    },
+    {
+        "dia": "L28",
+        "chistes": 5,
+        "aproximacion": 7
     }
 ]
