@@ -358,5 +358,9 @@
     {
         "autor": "Jorge",
         "chiste": "<img src='img/chisteo-jorge-12.jpg' alt='Chisteo Jorge 12' loading='lazy'>"
+    },
+    {
+        "autor": "David",
+        "chiste": "<p>— ¿Cuánto valen las alitas del KFC?</p><p>— Pollo qué sé.</p>"
     }
 ]
