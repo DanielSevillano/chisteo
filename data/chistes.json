@@ -362,5 +362,17 @@
     {
         "autor": "David",
         "chiste": "<p>— ¿Cuánto valen las alitas del KFC?</p><p>— Pollo qué sé.</p>"
+    },
+    {
+        "autor": "Dani",
+        "chiste": "<img src='img/chisteo-dani-11.jpg' alt='Chisteo Dani 11' loading='lazy'>"
+    },
+    {
+        "autor": "Carmelina",
+        "chiste": "<img src='img/chisteo-carmelina-2.jpg' alt='Chisteo Carmelina 2' loading='lazy'>"
+    },
+    {
+        "autor": "Javi A",
+        "chiste": "<img src='img/chisteo-javi-a-6.jpg' alt='Chisteo Javi A 6' loading='lazy'>"
     }
 ]
