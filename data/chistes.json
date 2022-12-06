@@ -378,5 +378,13 @@
     {
         "autor": "David",
         "chiste": "<p>¿Por qué puedes confiar plenamente en el conjunto de los naturales?</p><p>Porque es sincero.</p>"
+    },
+    {
+        "autor": "María",
+        "chiste": "<p>¿Qué le dice un ganso a una gansa?</p><p>¡Vengansa!</p>"
+    },
+    {
+        "autor": "María",
+        "chiste": "<img src='img/chisteo-maria-8.jpg' alt='Chisteo María 8' loading='lazy'>"
     }
 ]
