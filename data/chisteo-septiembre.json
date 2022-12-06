@@ -163,5 +163,10 @@
         "dia": "J1",
         "chistes": 4,
         "aproximacion": 6
+    },
+    {
+        "dia": "L6",
+        "chistes": 13,
+        "aproximacion": 7
     }
 ]
