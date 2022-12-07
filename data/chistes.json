@@ -386,5 +386,13 @@
     {
         "autor": "María",
         "chiste": "<img src='img/chisteo-maria-8.jpg' alt='Chisteo María 8' loading='lazy'>"
+    },
+    {
+        "autor": "Samuel",
+        "chiste": "<p>Nunca le rompas el corazón a alguien, solo tienen uno. Rómpele los huesos mejor, tienen 206.</p>"
+    },
+    {
+        "autor": "Cristi",
+        "chiste": "<audio controls><source src='audio/chisteo-cristi-6.mp3' type='audio/mpeg'></audio>"
     }
 ]
