@@ -165,8 +165,13 @@
         "aproximacion": 6
     },
     {
-        "dia": "L6",
+        "dia": "L5",
         "chistes": 13,
+        "aproximacion": 7
+    },
+    {
+        "dia": "X7",
+        "chistes": 4,
         "aproximacion": 7
     }
 ]
