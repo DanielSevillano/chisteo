@@ -173,5 +173,10 @@
         "dia": "X7",
         "chistes": 4,
         "aproximacion": 7
+    },
+    {
+        "dia": "X14",
+        "chistes": 5,
+        "aproximacion": 10
     }
 ]
