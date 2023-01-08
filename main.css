@@ -309,6 +309,8 @@ Clases
     grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
     grid-template-rows: masonry;
     gap: 10px;
+    max-height: 80vh;
+    overflow-y: scroll;
 }
 
 .contenedor-maneo {
@@ -316,6 +318,8 @@ Clases
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    max-height: 80vh;
+    overflow-y: scroll;
 }
 
 .contenedor-maneo img {

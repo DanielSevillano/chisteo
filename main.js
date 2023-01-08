@@ -1,8 +1,15 @@
-async function fraseCelebre() {
-    const respuesta = await fetch("data/frases.json");
-    const datos = await respuesta.json();
+function fraseCelebre() {
+    const frases = [
+        "Pienso, luego chisteo.",
+        "Solo hay dos cosas infinitas: el universo y el chisteo. Y no estoy tan seguro de la primera.",
+        "Detesto a la gente que lleva camisetas del Che sin haber escuchado nunca un disco suyo.",
+        "Mirar una ventana es como mirar una pared, pero en vez de una pared es una ventana.",
+        "Halcón lego.",
+        "Existe un relación clara entre la topología algebraica y el código penal."
+    ];
+    
     const cita = document.querySelector("blockquote");
-    cita.textContent = datos[Math.floor(Math.random() * datos.length)];
+    cita.textContent = frases[Math.floor(Math.random() * frases.length)];
 }
 
 async function graficaChisteo(url, id) {
@@ -162,9 +169,8 @@ async function datosChistes() {
     });
 }
 
-async function imagenesManeo() {
-    const respuesta = await fetch("data/maneo.json");
-    const datos = await respuesta.json();
+function imagenesManeo() {
+    const datos = ["Mantecado", "Mango", "Mandril", "Mancuerna", "Manguera", "Mantequilla", "Manga", "Manguitos", "Manguito", "Manjula", "MAN"];
 
     const contenedorManeo = document.querySelector(".contenedor-maneo");
 
@@ -173,7 +179,7 @@ async function imagenesManeo() {
         const imagen = document.createElement("img");
         imagen.src = "img/maneo-" + nombre + ".jpg";
         imagen.alt = "Maneo " + nombre;
-        imagen.setAttribute("loading", "lazy");
+        imagen.loading = "lazy";
         contenedorManeo.append(imagen);
     });
 }
