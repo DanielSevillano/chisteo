@@ -394,5 +394,21 @@
     {
         "autor": "Cristi",
         "chiste": "<audio controls><source src='audio/chisteo-cristi-6.mp3' type='audio/mpeg'></audio>"
+    },
+    {
+        "autor": "Jorge",
+        "chiste": "<img src='img/chisteo-jorge-13.jpg' alt='Chisteo Jorge 13' loading='lazy'>"
+    },
+    {
+        "autor": "Jorge",
+        "chiste": "<img src='img/chisteo-jorge-14.jpg' alt='Chisteo Jorge 14' loading='lazy'>"
+    },
+    {
+        "autor": "Siri",
+        "chiste": "<p>Un hortelano llama a otro por teléfono y le dice:</p><p>— ¡Hola, Paco! ¿Qué estás haciendo?</p><p>Y este le contesta:</p><p>— Hola Manolo, pues echarle tierra a las fresas.</p><p>Entonces el primero le pregunta:</p><p>— ¿Y no las has probado con nata?</p>"
+    },
+    {
+        "autor": "Dani",
+        "chiste": "<img src='img/chisteo-dani-12.jpg' alt='Chisteo Dani 12' loading='lazy'>"
     }
 ]
