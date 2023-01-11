@@ -410,5 +410,9 @@
     {
         "autor": "Dani",
         "chiste": "<img src='img/chisteo-dani-12.jpg' alt='Chisteo Dani 12' loading='lazy'>"
+    },
+    {
+        "autor": "David",
+        "chiste": "<p>¿Qué es una oreja?</p><p>Sesenta minutejos.</p>"
     }
 ]
