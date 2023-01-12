@@ -1,418 +1,522 @@
 [
     {
         "autor": "Dani",
-        "chiste": "<p>Antonio.</p>"
+        "tipo": "p",
+        "chiste": "Antonio."
     },
     {
         "autor": "Jesús",
-        "chiste": "<p>¿Qué hace un hawaiano en un hotel?</p><p>Se aloja.</p>"
+        "tipo": "p",
+        "chiste": "¿Qué hace un hawaiano en un hotel?<br>Se aloja."
     },
     {
         "autor": "Jorge",
-        "chiste": "<p>— Paco, por el culo no.</p><p>— ¿Entonces por dónde Manolo?</p>"
+        "tipo": "p",
+        "chiste": "— Paco, por el culo no.<br>— ¿Entonces por dónde Manolo?"
     },
     {
         "autor": "Jacque",
-        "chiste": "<p>Var<sub>θ </sub>(T)</p>"
+        "tipo": "p",
+        "chiste": "Var<sub>θ</sub> (T)"
     },
     {
         "autor": "Manu",
-        "chiste": "<p>— Cariño, ¿estoy gorda?</p><p>— No mujer, estás preciosa como estás.</p><p>— No me lo creo, dímelo al oído.</p><p>Se acerca al oído y dice:</p><p>— Que no cariño, que estás hermosa como estás.</p><p>— Venga, ahora el otro.</p><p>— Sí claro, ¿qué quieres que dé toda la vuelta?</p>"
+        "tipo": "p",
+        "chiste": "— Cariño, ¿estoy gorda?<br>— No mujer, estás preciosa como estás.<br>— No me lo creo, dímelo al oído.<br>Se acerca al oído y dice:<br>— Que no cariño, que estás hermosa como estás.<br>— Venga, ahora el otro.<br>— Sí claro, ¿qué quieres que dé toda la vuelta?"
     },
     {
         "autor": "Nico",
-        "chiste": "<p>¿Qué hace un negro saltando de un barranco?</p><p>Bien, hace bien.</p>"
+        "tipo": "p",
+        "chiste": "¿Qué hace un negro saltando de un barranco?<br>Bien, hace bien."
     },
     {
         "autor": "Rau",
-        "chiste": "<p><a href='https://chistalia.es/peruanos'>Los mejores 185 chistes de peruanos en español</a></p>"
+        "tipo": "p",
+        "chiste": "<a href='https://chistalia.es/peruanos'>Los mejores 185 chistes de peruanos en español</a>"
     },
     {
         "autor": "Irene",
-        "chiste": "<p>¿Qué guarda Darth Vader en la nevera?</p><p>Helado oscuro.</p>"
+        "tipo": "p",
+        "chiste": "¿Qué guarda Darth Vader en la nevera?<br>Helado oscuro."
     },
     {
         "autor": "Cristi",
-        "chiste": "<p>¿Sabéis por qué el misil que tiraron a África no impactó?</p><p>Porque no encontró el blanco.</p>"
+        "tipo": "p",
+        "chiste": "¿Sabéis por qué el misil que tiraron a África no impactó?<br>Porque no encontró el blanco."
     },
     {
         "autor": "Cristi",
-        "chiste": "<p>Hay dos pollitos en el bar y dice uno:</p><p>— ¿Pío?</p><p>Y dice el otro:</p><p>— Píe, píe tú.</p>"
+        "tipo": "p",
+        "chiste": "Hay dos pollitos en el bar y dice uno:<br>— ¿Pío?<br>Y dice el otro:<br>— Píe, píe tú."
     },
     {
         "autor": "Cristi",
-        "chiste": "<audio controls><source src='audio/chisteo-cristi-3.mp3' type='audio/mpeg'></audio>"
+        "tipo": "audio",
+        "chiste": "chisteo-cristi-3.mp3"
     },
     {
         "autor": "Cristi",
-        "chiste": "<p>¿Cómo está un taper en el bosque?</p><p>Taperdío.</p>"
+        "tipo": "p",
+        "chiste": "¿Cómo está un taper en el bosque?<br>Taperdío."
     },
     {
         "autor": "Miwel",
-        "chiste": "<p>¿Qué le dice un semáforo a otro?</p><p>No me mires que me estoy cambiando.</p>"
+        "tipo": "p",
+        "chiste": "¿Qué le dice un semáforo a otro?<br>No me mires que me estoy cambiando."
     },
     {
         "autor": "Cristi",
-        "chiste": "<p>¿Qué le dice un árbol a otro?</p><p>¿Qué pasa tronco?</p>"
+        "tipo": "p",
+        "chiste": "¿Qué le dice un árbol a otro?<br>¿Qué pasa tronco?"
     },
     {
         "autor": "Miwel",
-        "chiste": "<p>— Últimamente te rascas mucho la cabeza. ¿Tienes piojos?</p><p>— No, solo tengo dos.</p>"
+        "tipo": "p",
+        "chiste": "— Últimamente te rascas mucho la cabeza. ¿Tienes piojos?<br>— No, solo tengo dos."
     },
     {
         "autor": "Paco",
-        "chiste": "<p>Esto son dos colegas que se encuentran en la piscina y le dice uno al otro:</p><p>— Manolo, ¿pero cómo puede ser que seas tan guarro de mearte en la piscina perro?</p><p>— Bueno Paco, pero todo el mundo se mea en la piscina.</p><p>— Pero no desde el trampolín.</p>"
+        "tipo": "p",
+        "chiste": "Esto son dos colegas que se encuentran en la piscina y le dice uno al otro:<br>— Manolo, ¿pero cómo puede ser que seas tan guarro de mearte en la piscina perro?<br>— Bueno Paco, pero todo el mundo se mea en la piscina.<br>— Pero no desde el trampolín."
     },
     {
         "autor": "Jorge",
-        "chiste": "<p>¿Por qué los hospitales tienen aire acondicionado?</p><p>Porque mantiene frescos a los vegetales.</p>"
+        "tipo": "p",
+        "chiste": "¿Por qué los hospitales tienen aire acondicionado?<br>Porque mantiene frescos a los vegetales."
     },
     {
         "autor": "Irene",
-        "chiste": "<p>¿Por qué se compró un tractor el hombre lobo?</p><p>Para sembrar el pánico.</p>"
+        "tipo": "p",
+        "chiste": "¿Por qué se compró un tractor el hombre lobo?<br>Para sembrar el pánico."
     },
     {
         "autor": "Rau",
-        "chiste": "<p><a href='https://es.wikipedia.org/wiki/Antiperuanismo'>Antiperuanismo</a></p>"
+        "tipo": "p",
+        "chiste": "<a href='https://es.wikipedia.org/wiki/Antiperuanismo'>Antiperuanismo</a>"
     },
     {
         "autor": "Rau",
-        "chiste": "<p><a href='https://www.pinterest.es/pin/651333164836347850/'>Los mejores chistes de sacerdote peruano</a></p>"
+        "tipo": "p",
+        "chiste": "<a href='https://www.pinterest.es/pin/651333164836347850/'>Los mejores chistes de sacerdote peruano</a>"
     },
     {
         "autor": "Gabo",
-        "chiste": "<audio controls><source src='audio/chisteo-gabo-1.mp3' type='audio/mpeg'></audio>"
+        "tipo": "audio",
+        "chiste": "chisteo-gabo-1.mp3"
     },
     {
         "autor": "Gabo",
-        "chiste": "<audio controls><source src='audio/chisteo-gabo-2.mp3' type='audio/mpeg'></audio>"
+        "tipo": "audio",
+        "chiste": "chisteo-gabo-2.mp3"
     },
     {
         "autor": "Rau",
-        "chiste": "<p>¿Qué tienen unos ordenadores y otros no?</p><p>Nvidia.</p>"
+        "tipo": "p",
+        "chiste": "¿Qué tienen unos ordenadores y otros no?<br>Nvidia."
     },
     {
         "autor": "Dani",
-        "chiste": "<img src='img/chisteo-dani-2.jpg' alt='Chisteo Dani 2' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-dani-2.jpg"
     },
     {
         "autor": "Sara",
-        "chiste": "<p>¿Qué hacen seis cuadrados en un Mercadona?</p><p>Hacendado.</p>"
+        "tipo": "p",
+        "chiste": "¿Qué hacen seis cuadrados en un Mercadona?<br>Hacendado."
     },
     {
         "autor": "Jorge",
-        "chiste": "<p>— A mí me gustaría vivir en una isla desierta.</p><p>— A mí también.</p><p>— ¡Joder! ¡Ya empezamos a llenarla!</p>"
+        "tipo": "p",
+        "chiste": "— A mí me gustaría vivir en una isla desierta.<br>— A mí también.<br>— ¡Joder! ¡Ya empezamos a llenarla!"
     },
     {
         "autor": "Dani",
-        "chiste": "<img src='img/chisteo-dani-3.jpg' alt='Chisteo Dani 3' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-dani-3.jpg"
     },
     {
         "autor": "Dani",
-        "chiste": "<p>— ¿Dónde vas gitano?</p><p>— @</p>"
+        "tipo": "p",
+        "chiste": "— ¿Dónde vas gitano?<br>— @"
     },
     {
         "autor": "Jose",
-        "chiste": "<p>El otro día fui a un banquete de caníbales y me dieron la espalda.</p>"
+        "tipo": "p",
+        "chiste": "El otro día fui a un banquete de caníbales y me dieron la espalda."
     },
     {
         "autor": "Rau",
-        "chiste": "<img src='img/chisteo-rau-5.jpg' alt='Chisteo Rau 5' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-rau-5.jpg"
     },
     {
         "autor": "Javi V",
-        "chiste": "<p>— ¡Socorro! ¿Hay algún doctor en la sala?</p><p>— Yo soy doctor en matemáticas.</p><p>— Ayúdeme, mi amigo se muere.</p><p>— Uno menos.</p>"
+        "tipo": "p",
+        "chiste": "— ¡Socorro! ¿Hay algún doctor en la sala?<br>— Yo soy doctor en matemáticas.<br>— Ayúdeme, mi amigo se muere.<br>— Uno menos."
     },
     {
         "autor": "Jacque",
-        "chiste": "<img src='img/chisteo-jacque-2.jpg' alt='Chisteo Jacque 2' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jacque-2.jpg"
     },
     {
         "autor": "Jorge",
-        "chiste": "<p>Me sacaron del grupo de WhatsApp de paracaidismo. Se ve que no caía bien.</p>"
+        "tipo": "p",
+        "chiste": "Me sacaron del grupo de WhatsApp de paracaidismo. Se ve que no caía bien."
     },
     {
         "autor": "Irene",
-        "chiste": "<p>¿Por qué no hay libros para el cansancio?</p><p>Porque están agotados.</p>"
+        "tipo": "p",
+        "chiste": "¿Por qué no hay libros para el cansancio?<br>Porque están agotados."
     },
     {
         "autor": "Alexa",
-        "chiste": "<p>¿Cuál es el colmo de un diseñador de moda?</p><p>Tener un hijo nudista.</p>"
+        "tipo": "p",
+        "chiste": "¿Cuál es el colmo de un diseñador de moda?<br>Tener un hijo nudista."
     },
     {
         "autor": "Pineda",
-        "chiste": "<p>Se abre el telón y se ve una piedra pequeñita, muy muy pequeña.</p><p>Se cierra el telón. ¿Cómo se llama la película?</p><p>Rocky.</p>"
+        "tipo": "p",
+        "chiste": "Se abre el telón y se ve una piedra pequeñita, muy muy pequeña.<br>Se cierra el telón. ¿Cómo se llama la película?<br>Rocky."
     },
     {
         "autor": "María",
-        "chiste": "<p>¿Qué es amarillo y atraviesa paredes?</p><p>Un limón mágico.</p>"
+        "tipo": "p",
+        "chiste": "¿Qué es amarillo y atraviesa paredes?<br>Un limón mágico."
     },
     {
         "autor": "Dani",
-        "chiste": "<p>Se abre el telón y se ve una ciudad arrasada por un huracán.</p><p>Se cierra el telón. ¿Cómo se llama la película?</p><p>Sin City.</p>"
+        "tipo": "p",
+        "chiste": "Se abre el telón y se ve una ciudad arrasada por un huracán.<br>Se cierra el telón. ¿Cómo se llama la película?<br>Sin City."
     },
     {
         "autor": "Jesús",
-        "chiste": "<p>¿Cómo se dice albañil en japones?</p><p>Alikato.</p>"
+        "tipo": "p",
+        "chiste": "¿Cómo se dice albañil en japones?<br>Alikato."
     },
     {
         "autor": "María",
-        "chiste": "<p>ª</p>"
+        "tipo": "p",
+        "chiste": "ª"
     },
     {
         "autor": "Jorge",
-        "chiste": "<p>Van un gitano, un moro, un negro y un búlgaro, ¿quién conduce?</p><p>El guardia civil.</p>"
+        "tipo": "p",
+        "chiste": "Van un gitano, un moro, un negro y un búlgaro, ¿quién conduce?<br>El guardia civil."
     },
     {
         "autor": "María",
-        "chiste": "<audio controls><source src='audio/chisteo-maria-3.mp3' type='audio/mpeg'></audio>"
+        "tipo": "audio",
+        "chiste": "chisteo-maria-3.mp3"
     },
     {
         "autor": "Jesús",
-        "chiste": "<p>¿Sabes quién es la hermana de la madre del atún?</p><p>Latita de atún.</p>"
+        "tipo": "p",
+        "chiste": "¿Sabes quién es la hermana de la madre del atún?<br>Latita de atún."
     },
     {
         "autor": "Dani",
-        "chiste": "<p>— Soy una persona saludable.</p><p>— ¿Te gusta comer bien?</p><p>— No, pero la gente me saluda.</p>"
+        "tipo": "p",
+        "chiste": "— Soy una persona saludable.<br>— ¿Te gusta comer bien?<br>— No, pero la gente me saluda."
     },
     {
         "autor": "Alexa",
-        "chiste": "<p>¿Cómo está el filete cuando no se entera de nada?</p><p>Empanado.</p>"
+        "tipo": "p",
+        "chiste": "¿Cómo está el filete cuando no se entera de nada?<br>Empanado."
     },
     {
         "autor": "Jacque",
-        "chiste": "<img src='img/chisteo-jacque-3.jpeg' alt='Chisteo Jacque 3' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jacque-3.jpeg"
     },
     {
         "autor": "Manu",
-        "chiste": "<p>— ¿Te sabes el chiste de la puta y el sordo?</p><p>— No.</p><p>— ¿Qué?</p>"
+        "tipo": "p",
+        "chiste": "— ¿Te sabes el chiste de la puta y el sordo?<br>— No.<br>— ¿Qué?"
     },
     {
         "autor": "Jacque",
-        "chiste": "<img src='img/chisteo-jacque-4.jpg' alt='Chisteo Jacque 4' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jacque-4.jpg"
     },
     {
         "autor": "Dani",
-        "chiste": "<p>— Señora, disculpe pero su vuelo viene demorado.</p><p>— Ay qué emoción, ¡es mi color favorito!</p>"
+        "tipo": "p",
+        "chiste": "— Señora, disculpe pero su vuelo viene demorado.<br>— Ay qué emoción, ¡es mi color favorito!"
     },
     {
         "autor": "Jesús",
-        "chiste": "<p>— Mamá mamá, en el colegio me llaman campana.</p><p>— ¿Sí? ¿Y eso hijo mío?</p><p>— Nada, tolonterías de la gente.</p>"
+        "tipo": "p",
+        "chiste": "— Mamá mamá, en el colegio me llaman campana.<br>— ¿Sí? ¿Y eso hijo mío?<br>— Nada, tolonterías de la gente."
     },
     {
         "autor": "Jorge",
-        "chiste": "<img src='img/chisteo-jorge-6.jpg' alt='Chisteo Jorge 6' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jorge-6.jpg"
     },
     {
         "autor": "Jesús",
-        "chiste": "<p>Se abre el telón y se ven una pera, una manzana, un melocotón y una piña dándose de hostias.</p><p>Se cierra el telón. ¿Cómo se llama la película?</p><p>Frutas too furious.</p>"
+        "tipo": "p",
+        "chiste": "Se abre el telón y se ven una pera, una manzana, un melocotón y una piña dándose de hostias.<br>Se cierra el telón. ¿Cómo se llama la película?<br>Frutas too furious."
     },
     {
         "autor": "Jesús",
-        "chiste": "<p>¿Qué le pasa a un garbanzo cuando se fuma un porro?</p><p>Que se va de la olla.</p>"
+        "tipo": "p",
+        "chiste": "¿Qué le pasa a un garbanzo cuando se fuma un porro?<br>Que se va de la olla."
     },
     {
         "autor": "Jacque",
-        "chiste": "<img src='img/chisteo-jacque-5.jpg' alt='Chisteo Jacque 5' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jacque-5.jpg"
     },
     {
         "autor": "María",
-        "chiste": "<p>— Es mejor mantener nuestro amor en secreto.</p><p>— Yo no te quiero.</p><p>— Esa es la actitud.</p>"
+        "tipo": "p",
+        "chiste": "— Es mejor mantener nuestro amor en secreto.<br>— Yo no te quiero.<br>— Esa es la actitud."
     },
     {
         "autor": "Jesús",
-        "chiste": "<audio controls><source src='audio/chisteo-jesus-7.mp3' type='audio/mpeg'></audio>"
+        "tipo": "audio",
+        "chiste": "chisteo-jesus-7.mp3"
     },
     {
         "autor": "Javi A",
-        "chiste": "<p>¿Qué colonia usa Batman?</p><p>Superfume.</p>"
+        "tipo": "p",
+        "chiste": "¿Qué colonia usa Batman?<br>Superfume."
     },
     {
         "autor": "Dani",
-        "chiste": "<img src='img/chisteo-dani-8.jpg' alt='Chisteo Dani 8' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-dani-8.jpg"
     },
     {
         "autor": "Javi A",
-        "chiste": "<img src='img/chisteo-javi-a-2.jpg' alt='Chisteo Javi A 2' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-javi-a-2.jpg"
     },
     {
         "autor": "Carmelina",
-        "chiste": "<img src='img/chisteo-carmelina-1.jpg' alt='Chisteo Carmelina 1' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-carmelina-1.jpg"
     },
     {
         "autor": "Joselu",
-        "chiste": "<img src='img/chisteo-joselu-1.jpeg' alt='Chisteo Joselu 1' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-joselu-1.jpeg"
     },
     {
         "autor": "Joselu",
-        "chiste": "<img src='img/chisteo-joselu-2.jpg' alt='Chisteo Joselu 2' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-joselu-2.jpg"
     },
     {
         "autor": "Joselu",
-        "chiste": "<img src='img/chisteo-joselu-3.jpeg' alt='Chisteo Joselu 3' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-joselu-3.jpeg"
     },
     {
         "autor": "Jacque",
-        "chiste": "<img src='img/chisteo-jacque-6.jpg' alt='Chisteo Jacque 6' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jacque-6.jpg"
     },
     {
         "autor": "Ana",
-        "chiste": "<p>— ¿Te gustaría que te contara un chiste de estadística?</p><p>— Probablemente.</p>"
+        "tipo": "p",
+        "chiste": "— ¿Te gustaría que te contara un chiste de estadística?<br>— Probablemente."
     },
     {
         "autor": "Ana",
-        "chiste": "<p>¿Qué le dice el 2 al 0?</p><p>Veinte conmigo.</p>"
+        "tipo": "p",
+        "chiste": "¿Qué le dice el 2 al 0?<br>Veinte conmigo."
     },
     {
         "autor": "Ana",
-        "chiste": "<p>Te contaría un chiste de química pero no sé cuál sería tu reacción.</p>"
+        "tipo": "p",
+        "chiste": "Te contaría un chiste de química pero no sé cuál sería tu reacción."
     },
     {
         "autor": "Joselu",
-        "chiste": "<video controls><source src='video/chisteo-joselu-4.mp4' type='video/mp4'></video>"
+        "tipo": "video",
+        "chiste": "chisteo-joselu-4.mp4"
     },
     {
         "autor": "María",
-        "chiste": "<p>¿Qué le dice un globo a un cactusssssssssss...?</p>"
+        "tipo": "p",
+        "chiste": "¿Qué le dice un globo a un cactusssssssssss...?"
     },
     {
         "autor": "Manu",
-        "chiste": "<p>El otro día en el trabajo les cambié las teclas N y M a unos compañeros. Algunos dirán que soy un monstruo, pero otros dirán que soy un nomstruo...</p>"
+        "tipo": "p",
+        "chiste": "El otro día en el trabajo les cambié las teclas N y M a unos compañeros. Algunos dirán que soy un monstruo, pero otros dirán que soy un nomstruo..."
     },
     {
         "autor": "Dani",
-        "chiste": "<img src='img/chisteo-dani-9.jpg' alt='Chisteo Dani 9' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-dani-9.jpg"
     },
     {
         "autor": "Jacque",
-        "chiste": "<p>Molly Molly Molly.</p>"
+        "tipo": "p",
+        "chiste": "Molly Molly Molly."
     },
     {
         "autor": "Dani",
-        "chiste": "<video controls><source src='video/chisteo-dani-10.mp4' type='video/mp4'></video>"
+        "tipo": "video",
+        "chiste": "chisteo-dani-10.mp4"
     },
     {
         "autor": "Jacque",
-        "chiste": "<img src='img/chisteo-jacque-8.jpg' alt='Chisteo Jacque 8' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jacque-8.jpg"
     },
     {
         "autor": "Jacque",
-        "chiste": "<p>Meneo.</p>"
+        "tipo": "p",
+        "chiste": "Meneo."
     },
     {
         "autor": "Javi A",
-        "chiste": "<p>¿Cuál es el país natal de Batman?</p><p>El Baticano.</p>"
+        "tipo": "p",
+        "chiste": "¿Cuál es el país natal de Batman?<br>El Baticano."
     },
     {
         "autor": "Jorge",
-        "chiste": "<img src='img/chisteo-jorge-7.jpg' alt='Chisteo Jorge 7' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jorge-7.jpg"
     },
     {
         "autor": "Jorge",
-        "chiste": "<img src='img/chisteo-jorge-8.jpeg' alt='Chisteo Jorge 8' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jorge-8.jpeg"
     },
     {
         "autor": "Javi A",
-        "chiste": "<p>¿Cómo se llama la máquina de hacer Antonios?</p><p>Antonio Machín.</p>"
+        "tipo": "p",
+        "chiste": "¿Cómo se llama la máquina de hacer Antonios?<br>Antonio Machín."
     },
     {
         "autor": "Triv",
-        "chiste": "<p>Esto es un profesor de matemáticas que llega a una clase de química y pregunta:</p><p>— ¿Cuándo decimos que una serie es convergente?</p><p>Un alumno avispado le responde:</p><p>— Cuando todos los términos convergen a cero.</p><p>— Entonces ¿cuándo es una serie absolutamente convergente?</p><p>— Cuando todos, absolutamente todos sus términos tienden a cero.</p>"
+        "tipo": "p",
+        "chiste": "Esto es un profesor de matemáticas que llega a una clase de química y pregunta:<br>— ¿Cuándo decimos que una serie es convergente?<br>Un alumno avispado le responde:<br>— Cuando todos los términos convergen a cero.<br>— Entonces ¿cuándo es una serie absolutamente convergente?<br>— Cuando todos, absolutamente todos sus términos tienden a cero."
     },
     {
         "autor": "Jorge",
-        "chiste": "<img src='img/chisteo-jorge-9.jpg' alt='Chisteo Jorge 9' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jorge-9.jpg"
     },
     {
         "autor": "María",
-        "chiste": "<p>¿Qué hay peor que encontrarse un gusano en una manzana?</p><p>Encontrarse medio.</p>"
+        "tipo": "p",
+        "chiste": "¿Qué hay peor que encontrarse un gusano en una manzana?<br>Encontrarse medio."
     },
     {
         "autor": "Jesús",
-        "chiste": "<audio controls><source src='audio/chisteo-jesus-8.mp3' type='audio/mpeg'></audio>"
+        "tipo": "audio",
+        "chiste": "chisteo-jesus-8.mp3"
     },
     {
         "autor": "Jorge",
-        "chiste": "<p>Manolo va un día a la farmacia y pregunta:</p><p>— ¿Tenéis pastillas para la exageración?</p><p>— Sí. ¿Cuántas quieres?</p><p>— Deme 300.000.</p>"
+        "tipo": "p",
+        "chiste": "Manolo va un día a la farmacia y pregunta:<br>— ¿Tenéis pastillas para la exageración?<br>— Sí. ¿Cuántas quieres?<br>— Deme 300.000."
     },
     {
         "autor": "David",
-        "chiste": "<p>Van dos dados risueños caminando por la calle y de repente uno de ellos tropieza y se cae. Este se levanta y al momento el otro dado le empuja y vuelve a caerse, a lo que este le pregunta:</p><p>— ¿Por qué me has tirado?</p><p>A lo que responde el otro:</p><p>— Porque salió 6 así que había que tirar otra vez.</p>"
+        "tipo": "p",
+        "chiste": "Van dos dados risueños caminando por la calle y de repente uno de ellos tropieza y se cae. Este se levanta y al momento el otro dado le empuja y vuelve a caerse, a lo que este le pregunta:<br>— ¿Por qué me has tirado?<br>A lo que responde el otro:<br>— Porque salió 6 así que había que tirar otra vez."
     },
     {
         "autor": "Jacque",
-        "chiste": "<p>— Manolo, entre pitos y flautas me he gastado 10000€.</p><p>— ¿Y eso Paco?</p><p>— Pues ya ves, 4000 en pitos y 6000 en flautas.</p>"
+        "tipo": "p",
+        "chiste": "— Manolo, entre pitos y flautas me he gastado 10000€.<br>— ¿Y eso Paco?<br>— Pues ya ves, 4000 en pitos y 6000 en flautas."
     },
     {
         "autor": "Jorge",
-        "chiste": "<img src='img/chisteo-jorge-11.jpg' alt='Chisteo Jorge 11' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jorge-11.jpg"
     },
     {
         "autor": "Jesús",
-        "chiste": "<img src='img/chisteo-jesus-9.jpg' alt='Chisteo Jesús 9' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jesus-9.jpg"
     },
     {
         "autor": "Javi A",
-        "chiste": "<img src='img/chisteo-javi-a-5.jpg' alt='Chisteo Javi A 5' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-javi-a-5.jpg"
     },
     {
         "autor": "Jorge",
-        "chiste": "<img src='img/chisteo-jorge-12.jpg' alt='Chisteo Jorge 12' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jorge-12.jpg"
     },
     {
         "autor": "David",
-        "chiste": "<p>— ¿Cuánto valen las alitas del KFC?</p><p>— Pollo qué sé.</p>"
+        "tipo": "p",
+        "chiste": "— ¿Cuánto valen las alitas del KFC?<br>— Pollo qué sé."
     },
     {
         "autor": "Dani",
-        "chiste": "<img src='img/chisteo-dani-11.jpg' alt='Chisteo Dani 11' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-dani-11.jpg"
     },
     {
         "autor": "Carmelina",
-        "chiste": "<img src='img/chisteo-carmelina-2.jpg' alt='Chisteo Carmelina 2' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-carmelina-2.jpg"
     },
     {
         "autor": "Javi A",
-        "chiste": "<img src='img/chisteo-javi-a-6.jpg' alt='Chisteo Javi A 6' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-javi-a-6.jpg"
     },
     {
         "autor": "David",
-        "chiste": "<p>¿Por qué puedes confiar plenamente en el conjunto de los naturales?</p><p>Porque es sincero.</p>"
+        "tipo": "p",
+        "chiste": "¿Por qué puedes confiar plenamente en el conjunto de los naturales?<br>Porque es sincero."
     },
     {
         "autor": "María",
-        "chiste": "<p>¿Qué le dice un ganso a una gansa?</p><p>¡Vengansa!</p>"
+        "tipo": "p",
+        "chiste": "¿Qué le dice un ganso a una gansa?<br>¡Vengansa!"
     },
     {
         "autor": "María",
-        "chiste": "<img src='img/chisteo-maria-8.jpg' alt='Chisteo María 8' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-maria-8.jpg"
     },
     {
         "autor": "Samuel",
-        "chiste": "<p>Nunca le rompas el corazón a alguien, solo tienen uno. Rómpele los huesos mejor, tienen 206.</p>"
+        "tipo": "p",
+        "chiste": "Nunca le rompas el corazón a alguien, solo tienen uno. Rómpele los huesos mejor, tienen 206."
     },
     {
         "autor": "Cristi",
-        "chiste": "<audio controls><source src='audio/chisteo-cristi-6.mp3' type='audio/mpeg'></audio>"
+        "tipo": "audio",
+        "chiste": "chisteo-cristi-6.mp3"
     },
     {
         "autor": "Jorge",
-        "chiste": "<img src='img/chisteo-jorge-13.jpg' alt='Chisteo Jorge 13' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jorge-13.jpg"
     },
     {
         "autor": "Jorge",
-        "chiste": "<img src='img/chisteo-jorge-14.jpg' alt='Chisteo Jorge 14' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-jorge-14.jpg"
     },
     {
         "autor": "Siri",
-        "chiste": "<p>Un hortelano llama a otro por teléfono y le dice:</p><p>— ¡Hola, Paco! ¿Qué estás haciendo?</p><p>Y este le contesta:</p><p>— Hola Manolo, pues echarle tierra a las fresas.</p><p>Entonces el primero le pregunta:</p><p>— ¿Y no las has probado con nata?</p>"
+        "tipo": "p",
+        "chiste": "Un hortelano llama a otro por teléfono y le dice:<br>— ¡Hola, Paco! ¿Qué estás haciendo?<br>Y este le contesta:<br>— Hola Manolo, pues echarle tierra a las fresas.<br>Entonces el primero le pregunta:<br>— ¿Y no las has probado con nata?"
     },
     {
         "autor": "Dani",
-        "chiste": "<img src='img/chisteo-dani-12.jpg' alt='Chisteo Dani 12' loading='lazy'>"
+        "tipo": "img",
+        "chiste": "chisteo-dani-12.jpg"
     },
     {
         "autor": "David",
-        "chiste": "<p>¿Qué es una oreja?</p><p>Sesenta minutejos.</p>"
+        "tipo": "p",
+        "chiste": "¿Qué es una oreja?<br>Sesenta minutejos."
     }
 ]

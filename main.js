@@ -5,9 +5,9 @@ function fraseCelebre() {
         "Detesto a la gente que lleva camisetas del Che sin haber escuchado nunca un disco suyo.",
         "Mirar una ventana es como mirar una pared, pero en vez de una pared es una ventana.",
         "Halcón lego.",
-        "Existe un relación clara entre la topología algebraica y el código penal."
+        "Existe un relación clara entre la topología algebraica y el código penal.",
     ];
-    
+
     const cita = document.querySelector("blockquote");
     cita.textContent = frases[Math.floor(Math.random() * frases.length)];
 }
@@ -60,13 +60,6 @@ async function datosChistes() {
     const respuesta = await fetch("data/chistes.json");
     const datos = await respuesta.json();
 
-    return datos;
-}
-
-async function datosChistes() {
-    const respuesta = await fetch("data/chistes.json");
-    const datos = await respuesta.json();
-
     // Información a rellenar
     const autores = new Map([]);
     const elementosChiste = [];
@@ -88,7 +81,23 @@ async function datosChistes() {
         const contenidoPlantilla = tarjeta.querySelector("[contenido]");
         const autorPlantilla = tarjeta.querySelector("[autor]");
         const numeroPlantilla = tarjeta.querySelector("[numero]");
-        contenidoPlantilla.innerHTML = chiste;
+
+        const elemento = document.createElement(dato.tipo);
+        if (dato.tipo == "p") {
+            elemento.innerHTML = dato.chiste;
+        } else if (dato.tipo == "img") {
+            elemento.src = "img/" + dato.chiste;
+            elemento.alt = "Chiste";
+            elemento.loading = "lazy";
+        } else if (dato.tipo == "video") {
+            elemento.src = "video/" + dato.chiste;
+            elemento.controls = true;
+        } else if (dato.tipo == "audio") {
+            elemento.src = "audio/" + dato.chiste;
+            elemento.controls = true;
+        }
+        contenidoPlantilla.append(elemento);
+
         autorPlantilla.textContent = autor;
         numeroPlantilla.textContent = autores.get(autor);
         contenedorChistes.prepend(tarjeta);
@@ -170,7 +179,7 @@ async function datosChistes() {
 }
 
 function imagenesManeo() {
-    const datos = ["Mantecado", "Mango", "Mandril", "Mancuerna", "Manguera", "Mantequilla", "Manga", "Manguitos", "Manguito", "Manjula", "MAN"];
+    const datos = ["Mantecado", "Mango", "Mandril", "Mancuerna", "Manguera", "Mantequilla", "Manga", "Manguitos", "Manguito", "Manjula", "Museo"];
 
     const contenedorManeo = document.querySelector(".contenedor-maneo");
 
