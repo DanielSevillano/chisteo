@@ -518,5 +518,15 @@
         "autor": "David",
         "tipo": "p",
         "chiste": "¿Qué es una oreja?<br>Sesenta minutejos."
+    },
+    {
+        "autor": "Jorge",
+        "tipo": "img",
+        "chiste": "chisteo-jorge-15.jpeg"
+    },
+    {
+        "autor": "Dani",
+        "tipo": "img",
+        "chiste": "chisteo-dani-13.jpeg"
     }
 ]
