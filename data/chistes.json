@@ -518,5 +518,20 @@
         "autor": "David",
         "tipo": "p",
         "chiste": "¿Qué es una oreja?<br>Sesenta minutejos."
+    },
+    {
+        "autor": "Jorge",
+        "tipo": "img",
+        "chiste": "chisteo-jorge-15.jpeg"
+    },
+    {
+        "autor": "Dani",
+        "tipo": "img",
+        "chiste": "chisteo-dani-13.jpeg"
+    },
+    {
+        "autor": "David",
+        "tipo": "p",
+        "chiste": "Un limón va al médico y al llegar a la sala de espera le pregunta a una manzana:<br>— ¿Usted espera?<br>— No, soy manzana."
     }
 ]
