@@ -194,7 +194,8 @@ function imagenesManeo() {
 }
 
 fraseCelebre();
-graficaChisteo("data/chisteo-junio.json", "grafica-junio");
-graficaChisteo("data/chisteo-septiembre.json", "grafica-septiembre");
+graficaChisteo("data/chisteo-inferido.json", "grafica-inferida");
+graficaChisteo("data/chisteo-ampliado.json", "grafica-ampliada");
+graficaChisteo("data/chisteo-multivariante.json", "grafica-multivariante");
 datosChistes();
 imagenesManeo();
