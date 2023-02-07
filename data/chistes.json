@@ -531,7 +531,37 @@
     },
     {
         "autor": "David",
+        "tipo": "img",
+        "chiste": "chisteo-david-5.jpg"
+    },
+    {
+        "autor": "David",
         "tipo": "p",
         "chiste": "Un limón va al médico y al llegar a la sala de espera le pregunta a una manzana:<br>— ¿Usted espera?<br>— No, soy manzana."
+    },
+    {
+        "autor": "Javi A",
+        "tipo": "img",
+        "chiste": "chisteo-javi-a-7.jpg"
+    },
+    {
+        "autor": "Joselu",
+        "tipo": "img",
+        "chiste": "chisteo-joselu-5.jpg"
+    },
+    {
+        "autor": "Dani",
+        "tipo": "img",
+        "chiste": "chisteo-dani-14.jpg"
+    },
+    {
+        "autor": "Jorge",
+        "tipo": "img",
+        "chiste": "chisteo-jorge-16.jpg"
+    },
+    {
+        "autor": "Dani",
+        "tipo": "img",
+        "chiste": "chisteo-dani-15.jpg"
     }
 ]
