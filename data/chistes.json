@@ -563,5 +563,10 @@
         "autor": "Dani",
         "tipo": "img",
         "chiste": "chisteo-dani-15.jpg"
+    },
+    {
+        "autor": "David",
+        "tipo": "p",
+        "chiste": "— Yo quiero un millón de euros como mi padre.<br>— ¿Tu padre tiene un millón de euros?<br>— No, que el también lo desea."
     }
 ]
