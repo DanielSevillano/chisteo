@@ -293,8 +293,10 @@ Clases
 
 .contenedor-grafica {
     position: relative;
-    width: 95%;
-    height: 250px;
+    max-width: 90ch;
+    width: 90vw;
+    max-height: 45ch;
+    height: 45vw;
     margin-block: 30px;
 }
 
