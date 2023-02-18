@@ -47,6 +47,7 @@ async function graficaChisteo(url, id) {
             ],
         },
         options: {
+            maintainAspectRatio: false,
             scales: {
                 y: {
                     beginAtZero: true,
@@ -173,6 +174,7 @@ async function datosChistes() {
             ],
         },
         options: {
+            maintainAspectRatio: false,
             indexAxis: "y",
         },
     });

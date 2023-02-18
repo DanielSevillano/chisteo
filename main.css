@@ -292,7 +292,9 @@ Clases
 ********************/
 
 .contenedor-grafica {
-    max-width: 95%;
+    position: relative;
+    width: 95%;
+    height: 250px;
     margin-block: 30px;
 }
 
