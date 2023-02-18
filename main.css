@@ -295,8 +295,9 @@ Clases
     position: relative;
     max-width: 90ch;
     width: 90vw;
+    min-height: 200px;
     max-height: 45ch;
-    height: 45vw;
+    height: 40vw;
     margin-block: 30px;
 }
 
