@@ -102,7 +102,7 @@ function rankingChistes(datos, numeroPersonas) {
 function chistesRecientes(datos, numeroChistes) {
     const contenedorChistes = document.querySelector(".contenedor-chistes");
 
-    datos.slice(-numeroChistes - 1, -1).forEach((dato) => {
+    datos.slice(-numeroChistes).forEach((dato) => {
         const tarjeta = document.createElement("article");
         const autor = document.createElement("p");
 
