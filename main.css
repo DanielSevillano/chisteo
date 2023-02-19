@@ -67,7 +67,7 @@
 }
 
 /********************
-General
+Estructura
 ********************/
 
 body {
@@ -112,28 +112,9 @@ footer {
     border-radius: 20px 20px 0 0;
 }
 
-article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: var(--secondary-container);
-    color: var(--on-secondary-container);
-    border-radius: 20px;
-}
-
-article > div:last-child {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 7px;
-    align-items: center;
-}
-
 /********************
-Componentes
+Texto
 ********************/
-
-/* Texto */
 
 h1 {
     font-size: x-large;
@@ -143,46 +124,13 @@ h2 {
     font-size: large;
 }
 
-blockquote {
-    margin-top: 2em;
-    font-style: italic;
-    text-align: center;
-}
-
-blockquote::before {
-    content: open-quote;
-}
-
-blockquote::after {
-    content: close-quote;
-}
-
 a {
     color: inherit;
 }
 
-small {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1/1;
-    width: 25px;
-    border-radius: 100%;
-}
-
-button small {
-    background-color: var(--primary);
-    color: var(--on-primary);
-    transition: background-color 200ms;
-}
-
-article small,
-button.seleccionado small {
-    background-color: var(--secondary);
-    color: var(--on-secondary);
-}
-
-/* Multimedia */
+/********************
+Multimedia
+********************/
 
 img,
 audio,
@@ -200,160 +148,4 @@ video {
 
 audio {
     max-width: 100%;
-}
-
-/* Botones */
-
-button,
-input::file-selector-button {
-    border-radius: 20px;
-    background-color: var(--secondary);
-    border-color: transparent;
-    color: var(--on-secondary);
-    transition: background-color 200ms;
-}
-
-button {
-    padding: 8px 24px;
-}
-
-input::file-selector-button {
-    padding: 4px 10px;
-}
-
-button:hover,
-input::file-selector-button:hover {
-    background-color: var(--primary);
-    color: var(--on-primary);
-    cursor: pointer;
-}
-
-.contenedor-filtros > button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 7px;
-    padding: 8px 16px;
-    background-color: var(--surface);
-    border: 1px solid var(--outline);
-    color: var(--on-surface);
-    border-radius: 10px;
-    font-size: small;
-    font-weight: bold;
-}
-
-.contenedor-filtros > button:hover,
-.contenedor-filtros > button.seleccionado {
-    background-color: var(--secondary-container);
-    border-color: var(--secondary-container);
-    color: var(--on-secondary-container);
-}
-
-form > button {
-    margin-inline: auto;
-    font-weight: bold;
-}
-
-/* Formulario */
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-label {
-    font-weight: bold;
-}
-
-input[type="text"],
-textarea {
-    box-sizing: border-box;
-    padding: 10px;
-    background-color: var(--surface);
-    border: 1px solid var(--outline);
-    color: var(--on-surface);
-    border-radius: 10px;
-}
-
-input[type="text"],
-input[type="file"],
-textarea {
-    font-family: inherit;
-}
-
-input:focus-visible,
-textarea:focus-visible {
-    outline-color: var(--secondary);
-}
-
-/********************
-Clases
-********************/
-
-.contenedor-grafica {
-    position: relative;
-    max-width: 90ch;
-    width: 90vw;
-    min-height: 200px;
-    max-height: 45ch;
-    height: 40vw;
-    margin-block: 30px;
-}
-
-.contenedor-filtros {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-}
-
-.contenedor-chistes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
-    grid-template-rows: masonry;
-    gap: 10px;
-    max-height: 80vh;
-    overflow-y: scroll;
-}
-
-.contenedor-maneo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    max-height: 80vh;
-    overflow-y: scroll;
-}
-
-.contenedor-maneo img {
-    margin: 0;
-    height: 200px;
-    width: auto;
-    max-width: none;
-}
-
-.contenedor-formulario {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
-    align-items: center;
-    gap: 20px;
-}
-
-.contenedor-formulario > div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-
-/********************
-Modo oscuro
-********************/
-
-@media (prefers-color-scheme: dark) {
-    canvas {
-        filter: invert(1) hue-rotate(180deg) brightness(1.1);
-    }
 }

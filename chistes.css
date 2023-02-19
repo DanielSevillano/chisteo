@@ -1,0 +1,101 @@
+@import url(main.css);
+
+/********************
+Chistes
+********************/
+
+.contenedor-chistes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
+    grid-template-rows: masonry;
+    gap: 10px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--secondary-container);
+    color: var(--on-secondary-container);
+    border-radius: 20px;
+}
+
+/********************
+Pie de tarjeta
+********************/
+
+article div:last-child {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 7px;
+    align-items: center;
+}
+
+article div p {
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+    font-size: small;
+    border-radius: 15px;
+}
+
+article div p:first-child {
+    background-color: var(--primary);
+    color: var(--on-primary);
+}
+
+/********************
+Filtros
+********************/
+
+.contenedor-filtros {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 16px;
+    background-color: var(--surface);
+    border: 1px solid var(--outline);
+    color: var(--on-surface);
+    border-radius: 10px;
+    font-size: small;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:hover,
+button.seleccionado {
+    background-color: var(--secondary-container);
+    border-color: var(--secondary-container);
+    color: var(--on-secondary-container);
+}
+
+small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    width: 25px;
+    background-color: var(--primary);
+    color: var(--on-primary);
+    border-radius: 100%;
+    transition: background-color 200ms;
+}
+
+button.seleccionado small {
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+}

@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="La página del chisteo, donde se vive por y para el chisteo." />
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="index.css" />
         <title>Chisteo</title>
 
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="main.js" async></script>
+        <script src="index.js" async></script>
     </head>
     <body>
         <header>
@@ -45,7 +45,7 @@
             </section>
 
             <section>
-                <h1>📈 Gráficas del chisteo</h1>
+                <h1>📈 Gráficas</h1>
 
                 <h2>Gráfica multivariante</h2>
                 <p>Del 1 de febrero en adelante</p>
@@ -67,29 +67,17 @@
             </section>
 
             <section>
-                <h1>🏆 Ranking del chisteo</h1>
+                <h1>🏆 Ranking</h1>
                 <div class="contenedor-grafica">
                     <canvas id="grafica-ranking" width="400" height="300"></canvas>
                 </div>
             </section>
 
             <section>
-                <h1>📖 Chisteo del pueblo</h1>
-                <div class="contenedor-filtros">
-                    <button class="seleccionado">Todos</button>
-                </div>
+                <h1>📖 Chistes recientes</h1>
+                <div class="contenedor-chistes"></div>
 
-                <div class="contenedor-chistes">
-                    <template plantilla>
-                        <article>
-                            <div contenido></div>
-                            <div>
-                                <small numero></small>
-                                <p autor></p>
-                            </div>
-                        </article>
-                    </template>
-                </div>
+                <button onclick="location.href = 'chistes.html'">Ver todos</button>
             </section>
 
             <section>

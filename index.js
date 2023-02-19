@@ -57,105 +57,24 @@ async function graficaChisteo(url, id) {
     });
 }
 
-async function datosChistes() {
-    const respuesta = await fetch("data/chistes.json");
-    const datos = await respuesta.json();
-
-    // Información a rellenar
+function rankingChistes(datos, numeroPersonas) {
     const autores = new Map([]);
-    const elementosChiste = [];
-
-    // Chistes
-    const contenedorChistes = document.querySelector(".contenedor-chistes");
-    const plantilla = document.querySelector("[plantilla]");
 
     datos.forEach((dato) => {
         const autor = dato.autor;
-        const chiste = dato.chiste;
 
-        // Actualizamos el conteo de chistes por autor
         if (autores.has(autor)) autores.set(autor, autores.get(autor) + 1);
         else autores.set(autor, 1);
-
-        // Rellenamos los datos en la plantilla
-        const tarjeta = plantilla.content.cloneNode(true).children[0];
-        const contenidoPlantilla = tarjeta.querySelector("[contenido]");
-        const autorPlantilla = tarjeta.querySelector("[autor]");
-        const numeroPlantilla = tarjeta.querySelector("[numero]");
-
-        const elemento = document.createElement(dato.tipo);
-        if (dato.tipo == "p") {
-            elemento.innerHTML = dato.chiste;
-        } else if (dato.tipo == "img") {
-            elemento.src = "img/" + dato.chiste;
-            elemento.alt = "Chiste";
-            elemento.loading = "lazy";
-        } else if (dato.tipo == "video") {
-            elemento.src = "video/" + dato.chiste;
-            elemento.controls = true;
-        } else if (dato.tipo == "audio") {
-            elemento.src = "audio/" + dato.chiste;
-            elemento.controls = true;
-        }
-        contenidoPlantilla.append(elemento);
-
-        autorPlantilla.textContent = autor;
-        numeroPlantilla.textContent = autores.get(autor);
-        contenedorChistes.prepend(tarjeta);
-
-        elementosChiste.push({ autor, chiste, tarjeta });
     });
 
     // Ranking
     const ranking = Array.from(autores.entries()).sort((a, b) => b[1] - a[1]);
 
-    // Filtros
-    const contenedorFiltros = document.querySelector(".contenedor-filtros");
-    const filtroTodos = document.querySelector("button");
-    filtroTodos.innerHTML += "<small>" + datos.length + "</small>";
-    const filtros = [filtroTodos];
-
-    filtroTodos.addEventListener("click", () => {
-        filtros.forEach((filtro) => {
-            if (filtro === filtroTodos) filtro.classList.add("seleccionado");
-            else filtro.classList.remove("seleccionado");
-        });
-
-        elementosChiste.forEach((elemento) => {
-            elemento.tarjeta.style.display = "flex";
-        });
-    });
-
-    ranking.slice(0, 9).forEach((puesto) => {
-        const autor = puesto[0];
-        const numero = puesto[1];
-
-        const botonFiltro = document.createElement("button");
-        const textoFiltro = document.createTextNode(autor);
-        botonFiltro.appendChild(textoFiltro);
-        botonFiltro.innerHTML += "<small>" + numero + "</small>";
-        contenedorFiltros.append(botonFiltro);
-
-        filtros.push(botonFiltro);
-
-        botonFiltro.addEventListener("click", () => {
-            filtros.forEach((filtro) => {
-                if (filtro === botonFiltro) filtro.classList.add("seleccionado");
-                else filtro.classList.remove("seleccionado");
-            });
-
-            elementosChiste.forEach((elemento) => {
-                if (elemento.autor !== autor) elemento.tarjeta.style.display = "none";
-                else elemento.tarjeta.style.display = "flex";
-            });
-        });
-    });
-
     // Gráfica
     const ejeY = [];
     const ejeX = [];
 
-    ranking.slice(0, 5).forEach((dato) => {
+    ranking.slice(0, numeroPersonas).forEach((dato) => {
         ejeY.push(dato[0]);
         ejeX.push(dato[1]);
     });
@@ -178,6 +97,42 @@ async function datosChistes() {
             indexAxis: "y",
         },
     });
+}
+
+function chistesRecientes(datos, numeroChistes) {
+    const contenedorChistes = document.querySelector(".contenedor-chistes");
+
+    datos.slice(-numeroChistes - 1, -1).forEach((dato) => {
+        const tarjeta = document.createElement("article");
+        const autor = document.createElement("p");
+
+        const contenido = document.createElement(dato.tipo);
+        if (dato.tipo == "p") {
+            contenido.innerHTML = dato.chiste;
+        } else if (dato.tipo == "img") {
+            contenido.src = "img/" + dato.chiste;
+            contenido.alt = "Chiste";
+            contenido.loading = "lazy";
+        } else if (dato.tipo == "video") {
+            contenido.src = "video/" + dato.chiste;
+            contenido.controls = true;
+        } else if (dato.tipo == "audio") {
+            contenido.src = "audio/" + dato.chiste;
+            contenido.controls = true;
+        }
+
+        autor.textContent = dato.autor;
+        tarjeta.append(contenido, autor);
+        contenedorChistes.prepend(tarjeta);
+    });
+}
+
+async function datosChistes() {
+    const respuesta = await fetch("data/chistes.json");
+    const datos = await respuesta.json();
+
+    rankingChistes(datos, 5);
+    chistesRecientes(datos, 10);
 }
 
 function imagenesManeo() {
