@@ -25,25 +25,25 @@ Botones
 button,
 input::file-selector-button {
     border-radius: 20px;
-    background-color: var(--secondary);
     border-color: transparent;
-    color: var(--on-secondary);
     transition: background-color 200ms;
 }
 
 button {
     padding: 8px 24px;
+    background-color: var(--primary);
+    color: var(--on-primary);
     font-weight: bold;
 }
 
 input::file-selector-button {
     padding: 4px 10px;
+    background-color: var(--secondary);
+    color: var(--on-secondary);
 }
 
 button:hover,
 input::file-selector-button:hover {
-    background-color: var(--primary);
-    color: var(--on-primary);
     cursor: pointer;
 }
 
