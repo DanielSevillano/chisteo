@@ -43,5 +43,15 @@
         "dia": "L20",
         "chistes": 6,
         "aproximacion": 3
+    },
+    {
+        "dia": "X22",
+        "chistes": 11,
+        "aproximacion": 4
+    },
+    {
+        "dia": "J23",
+        "chistes": 5,
+        "aproximacion": 7
     }
 ]
