@@ -573,5 +573,10 @@
         "autor": "David",
         "tipo": "p",
         "chiste": "¿Por qué un informático confunde Navidad con Halloween?<br>Porque:<br>25 dec = 31 oct<br>25 = 3x8<sup>1</sup>+1x8<sup>0</sup>"
+    },
+    {
+        "autor": "David",
+        "tipo": "img",
+        "chiste": "chisteo-david-9.jpg"
     }
 ]

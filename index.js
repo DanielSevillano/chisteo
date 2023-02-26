@@ -136,7 +136,7 @@ async function datosChistes() {
 }
 
 function imagenesManeo() {
-    const datos = ["Mantecado", "Mango", "Mandril", "Mancuerna", "Manguera", "Mantequilla", "Manga", "Manguitos", "Manguito", "Manjula", "Museo"];
+    const datos = ["Mantecado", "Mango", "Mandril", "Mancuerna", "Manguera", "Mantequilla", "Manga", "Manguitos", "Manguito", "Manjula", "Museo", "Manifold"];
 
     const contenedorManeo = document.querySelector(".contenedor-maneo");
 
