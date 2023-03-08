@@ -63,5 +63,15 @@
         "dia": "J2",
         "chistes": 2,
         "aproximacion": 6
+    },
+    {
+        "dia": "L6",
+        "chistes": 6,
+        "aproximacion": 5
+    },
+    {
+        "dia": "X8",
+        "chistes": 11,
+        "aproximacion": 5
     }
 ]
