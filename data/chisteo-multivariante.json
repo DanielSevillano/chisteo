@@ -83,5 +83,15 @@
         "dia": "L13",
         "chistes": 2,
         "aproximacion": 10
+    },
+    {
+        "dia": "X15",
+        "chistes": 3,
+        "aproximacion": 4
+    },
+    {
+        "dia": "J16",
+        "chistes": 1,
+        "aproximacion": 5
     }
 ]
