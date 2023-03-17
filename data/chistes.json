@@ -578,5 +578,15 @@
         "autor": "David",
         "tipo": "img",
         "chiste": "chisteo-david-9.jpg"
+    },
+    {
+        "autor": "Chemita",
+        "tipo": "img",
+        "chiste": "chisteo-chemita-1.jpg"
+    },
+    {
+        "autor": "Dani",
+        "tipo": "video",
+        "chiste": "chisteo-dani-16.mp4"
     }
 ]
