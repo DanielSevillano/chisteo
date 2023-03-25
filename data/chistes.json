@@ -588,5 +588,15 @@
         "autor": "Dani",
         "tipo": "video",
         "chiste": "chisteo-dani-16.mp4"
+    },
+    {
+        "autor": "Dani",
+        "tipo": "img",
+        "chiste": "chisteo-dani-17.jpg"
+    },
+    {
+        "autor": "Javi A",
+        "tipo": "p",
+        "chiste": "¿Qué es un oso polar?<br>Un oso rectangular, después de un cambio de coordenadas."
     }
 ]
