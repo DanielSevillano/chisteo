@@ -108,5 +108,10 @@
         "dia": "J23",
         "chistes": 8,
         "aproximacion": 5
+    },
+    {
+        "dia": "L27",
+        "chistes": 3,
+        "aproximacion": 5
     }
 ]
