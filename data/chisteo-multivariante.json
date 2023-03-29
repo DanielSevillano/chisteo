@@ -113,5 +113,10 @@
         "dia": "L27",
         "chistes": 3,
         "aproximacion": 5
+    },
+    {
+        "dia": "X28",
+        "chistes": 5,
+        "aproximacion": 4
     }
 ]
