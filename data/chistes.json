@@ -598,5 +598,10 @@
         "autor": "Javi A",
         "tipo": "p",
         "chiste": "¿Qué es un oso polar?<br>Un oso rectangular, después de un cambio de coordenadas."
+    },
+    {
+        "autor": "David",
+        "tipo": "p",
+        "chiste": "Todo era risa hasta que supimos que el tartamudo quería jamón."
     }
 ]
