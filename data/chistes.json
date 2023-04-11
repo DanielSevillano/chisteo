@@ -603,5 +603,10 @@
         "autor": "David",
         "tipo": "p",
         "chiste": "Todo era risa hasta que supimos que el tartamudo quería jamón."
+    },
+    {
+        "autor": "Jorgito",
+        "tipo": "p",
+        "chiste": "Isotrópico."
     }
 ]
