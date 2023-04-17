@@ -608,5 +608,20 @@
         "autor": "Jorgito",
         "tipo": "p",
         "chiste": "Isotrópico."
+    },
+    {
+        "autor": "Álvaro",
+        "tipo": "img",
+        "chiste": "chisteo-alvaro-1.jpeg"
+    },
+    {
+        "autor": "Álvaro",
+        "tipo": "img",
+        "chiste": "chisteo-alvaro-2.jpg"
+    },
+    {
+        "autor": "David",
+        "tipo": "p",
+        "chiste": "Se abre el telón y aparece un niño pidiendo permiso a su profe para ir al baño pero nunca le deja ir. ¿Cómo se llama la obra?<br/>Micción imposible."
     }
 ]
