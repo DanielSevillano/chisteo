@@ -151,8 +151,9 @@ function imagenesManeo() {
 }
 
 fraseCelebre();
-graficaChisteo("data/chisteo-inferido.json", "grafica-inferida");
-graficaChisteo("data/chisteo-ampliado.json", "grafica-ampliada");
-graficaChisteo("data/chisteo-multivariante.json", "grafica-multivariante");
+graficaChisteo("data/chisteo-inferido.json", "grafico-inferida");
+graficaChisteo("data/chisteo-ampliado.json", "grafico-ampliada");
+graficaChisteo("data/chisteo-multivariante.json", "grafico-multivariante");
+graficaChisteo("data/chisteo-inferidos.json", "grafico-inferidos");
 datosChistes();
 imagenesManeo();
