@@ -15,15 +15,6 @@
     <body>
         <script>
             if (localStorage.getItem("color") != undefined) document.body.classList.add(localStorage.getItem("color"));
-
-            function cambiarColor(color) {
-                if (color == localStorage.getItem("color")) return;
-                document.body.removeAttribute("class");
-
-                if (color != undefined) document.body.classList.add(color);
-                localStorage.setItem("color", color);
-                window.location.reload();
-            }
         </script>
 
         <header>

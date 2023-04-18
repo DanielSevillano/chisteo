@@ -12,6 +12,10 @@
         <script src="chistes.js" async></script>
     </head>
     <body>
+        <script>
+            if (localStorage.getItem("color") != undefined) document.body.classList.add(localStorage.getItem("color"));
+        </script>
+
         <header>
             <h1>🤪 <a href="index.html">Chisteo</a></h1>
         </header>

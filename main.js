@@ -1,3 +1,12 @@
+function cambiarColor(color) {
+    if (color == localStorage.getItem("color")) return;
+    document.body.removeAttribute("class");
+
+    if (color != undefined) document.body.classList.add(color);
+    localStorage.setItem("color", color);
+    window.location.reload();
+}
+
 function fraseCelebre() {
     const frases = [
         "Pienso, luego chisteo.",
