@@ -37,12 +37,12 @@ async function graficaChisteo(url, id) {
                 {
                     label: "Chisteo exacto",
                     data: ejeY1,
-                    borderColor: "#1e6d00",
+                    borderColor: getComputedStyle(document.body).getPropertyValue("--primary"),
                 },
                 {
                     label: "Aproximación",
                     data: ejeY2,
-                    borderColor: "#84db63",
+                    borderColor: getComputedStyle(document.body).getPropertyValue("--inverse-primary"),
                 },
             ],
         },
@@ -88,7 +88,7 @@ function rankingChistes(datos, numeroPersonas) {
                 {
                     label: "Chistes",
                     data: ejeX,
-                    backgroundColor: "#1e6d00",
+                    backgroundColor: getComputedStyle(document.body).getPropertyValue("--primary"),
                 },
             ],
         },

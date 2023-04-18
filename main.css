@@ -48,6 +48,21 @@ input::file-selector-button:hover {
 }
 
 /********************
+Colores
+********************/
+
+.contenedor-colores {
+    display: flex;
+    gap: 10px;
+}
+
+.color {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px var(--on-background);
+}
+
+/********************
 Gráficas
 ********************/
 
@@ -176,4 +191,14 @@ textarea:focus-visible {
 form > button {
     margin-inline: auto;
     font-weight: bold;
+}
+
+/********************
+Transiciones
+********************/
+
+body,
+header,
+article {
+    transition: background 300ms;
 }

@@ -13,6 +13,19 @@
         <script src="main.js" async></script>
     </head>
     <body>
+        <script>
+            if (localStorage.getItem("color") != undefined) document.body.classList.add(localStorage.getItem("color"));
+
+            function cambiarColor(color) {
+                if (color == localStorage.getItem("color")) return;
+                document.body.removeAttribute("class");
+
+                if (color != undefined) document.body.classList.add(color);
+                localStorage.setItem("color", color);
+                window.location.reload();
+            }
+        </script>
+
         <header>
             <h1>🤪 Chisteo</h1>
         </header>
@@ -29,6 +42,15 @@
                     cariño del mundo.
                 </p>
                 <blockquote></blockquote>
+
+                <h2>Temas</h2>
+
+                <div class="contenedor-colores">
+                    <button class="color" style="background-color: green" onclick="cambiarColor(undefined)"></button>
+                    <button class="color" style="background-color: steelblue" onclick="cambiarColor('azul')"></button>
+                    <button class="color" style="background-color: firebrick" onclick="cambiarColor('rojo')"></button>
+                    <button class="color" style="background-color: gold" onclick="cambiarColor('amarillo')"></button>
+                </div>
 
                 <article style="margin-top: 30px">
                     <div>
