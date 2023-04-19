@@ -7,20 +7,6 @@ function cambiarColor(color) {
     window.location.reload();
 }
 
-function fraseCelebre() {
-    const frases = [
-        "Pienso, luego chisteo.",
-        "Solo hay dos cosas infinitas: el universo y el chisteo. Y no estoy tan seguro de la primera.",
-        "Detesto a la gente que lleva camisetas del Che sin haber escuchado nunca un disco suyo.",
-        "Mirar una ventana es como mirar una pared, pero en vez de una pared es una ventana.",
-        "Halcón lego.",
-        "Existe un relación clara entre la topología algebraica y el código penal.",
-    ];
-
-    const cita = document.querySelector("blockquote");
-    cita.textContent = frases[Math.floor(Math.random() * frases.length)];
-}
-
 async function graficaChisteo(url, id) {
     const ejeX = [];
     const ejeY1 = [];
@@ -38,7 +24,7 @@ async function graficaChisteo(url, id) {
     });
 
     const ctx = document.getElementById(id);
-    new Chart(ctx, {
+    const grafica = new Chart(ctx, {
         type: "line",
         data: {
             labels: ejeX,
@@ -64,6 +50,8 @@ async function graficaChisteo(url, id) {
             },
         },
     });
+
+    return grafica;
 }
 
 function rankingChistes(datos, numeroPersonas) {
@@ -144,25 +132,46 @@ async function datosChistes() {
     chistesRecientes(datos, 10);
 }
 
-function imagenesManeo() {
-    const datos = ["Mantecado", "Mango", "Mandril", "Mancuerna", "Manguera", "Mantequilla", "Manga", "Manguitos", "Manguito", "Manjula", "Museo", "Manifold"];
+// Frase célebre
+const frases = [
+    "Pienso, luego chisteo.",
+    "Solo hay dos cosas infinitas: el universo y el chisteo. Y no estoy tan seguro de la primera.",
+    "Detesto a la gente que lleva camisetas del Che sin haber escuchado nunca un disco suyo.",
+    "Mirar una ventana es como mirar una pared, pero en vez de una pared es una ventana.",
+    "Halcón lego.",
+    "Existe un relación clara entre la topología algebraica y el código penal.",
+];
 
-    const contenedorManeo = document.querySelector(".contenedor-maneo");
+const cita = document.querySelector("blockquote");
+cita.textContent = frases[Math.floor(Math.random() * frases.length)];
 
-    datos.forEach((dato) => {
-        const nombre = dato.toLowerCase();
-        const imagen = document.createElement("img");
-        imagen.src = "img/maneo-" + nombre + ".jpg";
-        imagen.alt = "Maneo " + nombre;
-        imagen.loading = "lazy";
-        contenedorManeo.append(imagen);
+// Maneo
+const datosManeo = ["Mantecado", "Mango", "Mandril", "Mancuerna", "Manguera", "Mantequilla", "Manga", "Manguitos", "Manguito", "Manjula", "Museo", "Manifold"];
+
+const contenedorManeo = document.querySelector(".contenedor-maneo");
+datosManeo.forEach((dato) => {
+    const nombre = dato.toLowerCase();
+    const imagen = document.createElement("img");
+    imagen.src = "img/maneo-" + nombre + ".jpg";
+    imagen.alt = "Maneo " + nombre;
+    imagen.loading = "lazy";
+    contenedorManeo.append(imagen);
+});
+
+// Gráficas
+const datosGraficas = [
+    { archivo: "data/chisteo-inferido.json", grafico: "grafico-inferido" },
+    { archivo: "data/chisteo-ampliado.json", grafico: "grafico-ampliado" },
+    { archivo: "data/chisteo-multivariante.json", grafico: "grafico-multivariante" },
+    { archivo: "data/chisteo-inferidos.json", grafico: "grafico-inferidos" },
+];
+
+const graficas = [];
+datosGraficas.forEach((dato) => {
+    graficaChisteo(dato.archivo, dato.grafico).then((grafica) => {
+        graficas.push(grafica);
     });
-}
+});
 
-fraseCelebre();
-graficaChisteo("data/chisteo-inferido.json", "grafico-inferida");
-graficaChisteo("data/chisteo-ampliado.json", "grafico-ampliada");
-graficaChisteo("data/chisteo-multivariante.json", "grafico-multivariante");
-graficaChisteo("data/chisteo-inferidos.json", "grafico-inferidos");
+// Chistes
 datosChistes();
-imagenesManeo();
