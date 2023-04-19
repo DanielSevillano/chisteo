@@ -540,9 +540,9 @@
         "chiste": "Un limón va al médico y al llegar a la sala de espera le pregunta a una manzana:<br>— ¿Usted espera?<br>— No, soy manzana."
     },
     {
-        "autor": "Javi A",
+        "autor": "Antonio",
         "tipo": "img",
-        "chiste": "chisteo-javi-a-7.jpg"
+        "chiste": "chisteo-antonio-1.jpg"
     },
     {
         "autor": "Joselu",
@@ -623,5 +623,10 @@
         "autor": "David",
         "tipo": "p",
         "chiste": "Se abre el telón y aparece un niño pidiendo permiso a su profe para ir al baño pero nunca le deja ir. ¿Cómo se llama la obra?<br/>Micción imposible."
+    },
+    {
+        "autor": "Javi A",
+        "tipo": "p",
+        "chiste": "Una señora va a la peluquería y está cerrada. Va a otra y también cerrada. Y la tercera, cerrada. ¿Cómo se llama la película?<br/>¡Ah! ¡Te rizas como puedas!"
     }
 ]
