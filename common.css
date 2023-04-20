@@ -12,10 +12,6 @@
         --on-tertiary: #ffffff;
         --tertiary-container: #bcebed;
         --on-tertiary-container: #002021;
-        --error: #ba1a1a;
-        --error-container: #ffdad6;
-        --on-error: #ffffff;
-        --on-error-container: #410002;
         --background: #fdfdf6;
         --on-background: #1a1c18;
         --surface: #fdfdf6;
@@ -29,6 +25,11 @@
         --shadow: #000000;
         --surface-tint: #1e6d00;
         --surface-tint-color: #1e6d00;
+
+        --error: #ba1a1a;
+        --error-container: #ffdad6;
+        --on-error: #ffffff;
+        --on-error-container: #410002;
     }
 
     .azul {
@@ -44,10 +45,6 @@
         --on-tertiary: #ffffff;
         --tertiary-container: #fed7f9;
         --on-tertiary-container: #2b122c;
-        --error: #ba1a1a;
-        --error-container: #ffdad6;
-        --on-error: #ffffff;
-        --on-error-container: #410002;
         --background: #fefbff;
         --on-background: #1b1b1f;
         --surface: #fefbff;
@@ -76,10 +73,6 @@
         --on-tertiary: #ffffff;
         --tertiary-container: #fbdfa6;
         --on-tertiary-container: #251a00;
-        --error: #ba1a1a;
-        --error-container: #ffdad6;
-        --on-error: #ffffff;
-        --on-error-container: #410002;
         --background: #fffbff;
         --on-background: #201a19;
         --surface: #fffbff;
@@ -109,10 +102,6 @@
         --on-tertiary: #ffffff;
         --tertiary-container: #c3ecd0;
         --on-tertiary-container: #002111;
-        --error: #ba1a1a;
-        --error-container: #ffdad6;
-        --on-error: #ffffff;
-        --on-error-container: #410002;
         --background: #fffbff;
         --on-background: #1d1c16;
         --surface: #fffbff;
@@ -344,4 +333,56 @@ video {
 
 audio {
     max-width: 100%;
+}
+
+/********************
+Temas especiales
+********************/
+
+.kikotema {
+    --primary: #ff8000;
+    --on-primary: black;
+    --primary-container: #ff8000;
+    --on-primary-container: black;
+    --secondary: #ff8000;
+    --on-secondary: black;
+    --secondary-container: #ff8000;
+    --on-secondary-container: black;
+    --tertiary: #ff8000;
+    --on-tertiary: black;
+    --tertiary-container: #ff8000;
+    --on-tertiary-container: black;
+    --background: white;
+    --on-background: black;
+    --surface: white;
+    --on-surface: black;
+    --surface-variant: #ff8000;
+    --on-surface-variant: black;
+    --outline: black;
+    --inverse-on-surface: black;
+    --inverse-surface: black;
+    --inverse-primary: #ff8000;
+    --shadow: black;
+    --surface-tint: black;
+    --outline-variant: black;
+    --scrim: black;
+}
+
+.kikotema header,
+.kikotema article {
+    border: 1px solid var(--outline);
+}
+
+.kikotema * {
+    border-radius: 0 !important;
+}
+
+.kikotema button:hover {
+    translate: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .kikotema canvas {
+        filter: none;
+    }
 }
