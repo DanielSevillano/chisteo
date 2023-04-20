@@ -53,13 +53,13 @@ Colores
 
 .contenedor-colores {
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 .color {
     aspect-ratio: 1;
     border-radius: 50%;
-    box-shadow: 0 0 0 1px var(--outline);
+    border: 1px solid var(--outline);
 }
 
 /********************
