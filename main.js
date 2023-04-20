@@ -4,7 +4,17 @@ function cambiarColor(color) {
 
     if (color != undefined) document.body.classList.add(color);
     localStorage.setItem("color", color);
-    window.location.reload();
+
+    graficas.forEach((grafica) => {
+        const datos = grafica.data.datasets;
+        if (datos.length === 2) {
+            datos[0].borderColor = getComputedStyle(document.body).getPropertyValue("--primary");
+            datos[1].borderColor = getComputedStyle(document.body).getPropertyValue("--inverse-primary");
+        } else {
+            datos[0].backgroundColor = getComputedStyle(document.body).getPropertyValue("--primary");
+        }
+        grafica.update();
+    });
 }
 
 async function graficaChisteo(url, id) {
@@ -77,7 +87,7 @@ function rankingChistes(datos, numeroPersonas) {
     });
 
     const ctx = document.getElementById("grafica-ranking");
-    new Chart(ctx, {
+    const grafica = new Chart(ctx, {
         type: "bar",
         data: {
             labels: ejeY,
@@ -94,6 +104,8 @@ function rankingChistes(datos, numeroPersonas) {
             indexAxis: "y",
         },
     });
+
+    return grafica;
 }
 
 function chistesRecientes(datos, numeroChistes) {
@@ -128,8 +140,8 @@ async function datosChistes() {
     const respuesta = await fetch("data/chistes.json");
     const datos = await respuesta.json();
 
-    rankingChistes(datos, 5);
     chistesRecientes(datos, 10);
+    graficas.push(rankingChistes(datos, 5));
 }
 
 // Frase célebre
