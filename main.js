@@ -152,6 +152,7 @@ const frases = [
     "Mirar una ventana es como mirar una pared, pero en vez de una pared es una ventana.",
     "Halcón lego.",
     "Existe un relación clara entre la topología algebraica y el código penal.",
+    "Al final tuve que aceptar el resultado, al igual que las sentencias judiciales, ¿qué remedio?",
 ];
 
 const cita = document.querySelector("blockquote");
