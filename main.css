@@ -59,7 +59,7 @@ Colores
 .color {
     aspect-ratio: 1;
     border-radius: 50%;
-    box-shadow: 0 0 0 1px var(--on-background);
+    box-shadow: 0 0 0 1px var(--outline);
 }
 
 /********************
