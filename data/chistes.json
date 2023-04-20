@@ -628,5 +628,10 @@
         "autor": "Javi A",
         "tipo": "p",
         "chiste": "Una señora va a la peluquería y está cerrada. Va a otra y también cerrada. Y la tercera, cerrada. ¿Cómo se llama la película?<br/>¡Ah! ¡Te rizas como puedas!"
+    },
+    {
+        "autor": "Jorge",
+        "tipo": "p",
+        "chiste": "— El 80% que habéis aprobado matemáticas, podéis iros.<br/>— ¿Y el 40% restante qué hacemos?"
     }
 ]
