@@ -309,6 +309,10 @@ h2 {
     font-size: large;
 }
 
+h3 {
+    font-size: medium;
+}
+
 a {
     color: inherit;
 }
@@ -370,6 +374,7 @@ Temas especiales
 
 .kikotema header,
 .kikotema article,
+.kikotema footer,
 .kikotema button,
 .kikotema input::file-selector-button {
     border: 1px solid var(--outline);
