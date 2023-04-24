@@ -26,6 +26,7 @@ button,
 input::file-selector-button {
     border-radius: 20px;
     border-color: transparent;
+    transition: opacity 300ms;
 }
 
 button {
@@ -33,7 +34,6 @@ button {
     background-color: var(--primary);
     color: var(--on-primary);
     font-weight: bold;
-    transition: translate 300ms;
 }
 
 input::file-selector-button {
@@ -44,11 +44,8 @@ input::file-selector-button {
 
 button:hover,
 input::file-selector-button:hover {
+    opacity: 0.85;
     cursor: pointer;
-}
-
-button:hover {
-    translate: 0 -2px;
 }
 
 /********************
