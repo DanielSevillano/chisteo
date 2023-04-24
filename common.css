@@ -372,6 +372,35 @@ Temas especiales
     --scrim: black;
 }
 
+.cuencatema {
+    --primary: black;
+    --on-primary: white;
+    --primary-container: transparent;
+    --on-primary-container: black;
+    --secondary: black;
+    --on-secondary: white;
+    --secondary-container: transparent;
+    --on-secondary-container: black;
+    --tertiary: transparent;
+    --on-tertiary: black;
+    --tertiary-container: black;
+    --on-tertiary-container: white;
+    --background: white;
+    --on-background: black;
+    --surface: white;
+    --on-surface: black;
+    --surface-variant: transparent;
+    --on-surface-variant: black;
+    --outline: black;
+    --inverse-on-surface: black;
+    --inverse-surface: black;
+    --inverse-primary: gray;
+    --shadow: black;
+    --surface-tint: black;
+    --outline-variant: black;
+    --scrim: black;
+}
+
 .kikotema header,
 .kikotema article,
 .kikotema footer,
@@ -383,10 +412,6 @@ Temas especiales
 .kikotema *,
 .kikotema input::file-selector-button {
     border-radius: 0 !important;
-}
-
-.kikotema button:hover {
-    translate: 0;
 }
 
 @media (prefers-color-scheme: dark) {
