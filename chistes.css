@@ -70,6 +70,7 @@ button {
     border-radius: 10px;
     font-size: small;
     font-weight: bold;
+    transition: background 300ms;
 }
 
 button:hover {
@@ -78,9 +79,8 @@ button:hover {
 
 button:hover,
 button.seleccionado {
-    background-color: var(--secondary-container);
-    border-color: var(--secondary-container);
-    color: var(--on-secondary-container);
+    background-color: var(--tertiary-container);
+    color: var(--on-tertiary-container);
 }
 
 small {
