@@ -8,5 +8,10 @@
         "dia": "V21",
         "chistes": 1,
         "aproximacion": 8
+    },
+    {
+        "dia": "L24",
+        "chistes": 1,
+        "aproximacion": 6
     }
 ]
