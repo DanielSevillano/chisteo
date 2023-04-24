@@ -75,6 +75,7 @@ async function datosChistes() {
 
         const botonFiltro = document.createElement("button");
         const textoFiltro = document.createTextNode(autor);
+        botonFiltro.type = "button";
         botonFiltro.appendChild(textoFiltro);
         botonFiltro.innerHTML += "<small>" + numero + "</small>";
         contenedorFiltros.append(botonFiltro);
