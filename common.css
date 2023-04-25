@@ -415,7 +415,8 @@ Temas especiales
 }
 
 @media (prefers-color-scheme: dark) {
-    .kikotema canvas {
+    .kikotema canvas,
+    .cuencatema canvas {
         filter: none;
     }
 }
