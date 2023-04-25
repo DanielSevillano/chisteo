@@ -633,5 +633,10 @@
         "autor": "Jorge",
         "tipo": "p",
         "chiste": "— El 80% que habéis aprobado matemáticas, podéis iros.<br/>— ¿Y el 40% restante qué hacemos?"
+    },
+    {
+        "autor": "Jorgito",
+        "tipo": "img",
+        "chiste": "chisteo-jorgito-2.jpg"
     }
 ]
