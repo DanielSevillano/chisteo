@@ -643,5 +643,10 @@
         "autor": "Jorge",
         "tipo": "img",
         "chiste": "chisteo-jorge-18.jpg"
+    },
+    {
+        "autor": "David",
+        "tipo": "img",
+        "chiste": "chisteo-david-12.png"
     }
 ]
