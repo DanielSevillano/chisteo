@@ -153,6 +153,7 @@ const frases = [
     "Halcón lego.",
     "Existe un relación clara entre la topología algebraica y el código penal.",
     "Al final tuve que aceptar el resultado, al igual que las sentencias judiciales, ¿qué remedio?",
+    "Me encantan las jeringas 💉👍",
 ];
 
 const cita = document.querySelector("blockquote");
