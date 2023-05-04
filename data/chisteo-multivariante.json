@@ -153,5 +153,15 @@
         "dia": "X26",
         "chistes": 6,
         "aproximacion": 6
+    },
+    {
+        "dia": "X3",
+        "chistes": 3,
+        "aproximacion": 6
+    },
+    {
+        "dia": "J4",
+        "chistes": 5,
+        "aproximacion": 4
     }
 ]
