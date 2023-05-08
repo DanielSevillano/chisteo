@@ -174,15 +174,14 @@ datosManeo.forEach((dato) => {
 
 // Gráficas
 const datosGraficas = [
-    { archivo: "data/chisteo-inferido.json", grafico: "grafico-inferido" },
-    { archivo: "data/chisteo-ampliado.json", grafico: "grafico-ampliado" },
-    { archivo: "data/chisteo-multivariante.json", grafico: "grafico-multivariante" },
-    { archivo: "data/chisteo-inferidos.json", grafico: "grafico-inferidos" },
+    { archivo: "data/chisteo-inferido.json", elemento: "grafica-inferida" },
+    { archivo: "data/chisteo-ampliado.json", elemento: "grafica-ampliada" },
+    { archivo: "data/chisteo-multivariante.json", elemento: "grafica-multivariante" },
 ];
 
 const graficas = [];
 datosGraficas.forEach((dato) => {
-    graficaChisteo(dato.archivo, dato.grafico).then((grafica) => {
+    graficaChisteo(dato.archivo, dato.elemento).then((grafica) => {
         graficas.push(grafica);
     });
 });
