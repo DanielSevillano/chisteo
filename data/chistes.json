@@ -653,5 +653,15 @@
         "autor": "Jorge",
         "tipo": "img",
         "chiste": "chisteo-jorge-19.jpg"
+    },
+    {
+        "autor": "María",
+        "tipo": "img",
+        "chiste": "chisteo-maria-9.jpg"
+    },
+    {
+        "autor": "David",
+        "tipo": "p",
+        "chiste": "¿Cuáles son las series favoritas de un astrónomo?<br/>Las telescópicas."
     }
 ]
