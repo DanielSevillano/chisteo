@@ -663,5 +663,10 @@
         "autor": "David",
         "tipo": "p",
         "chiste": "¿Cuáles son las series favoritas de un astrónomo?<br/>Las telescópicas."
+    },
+    {
+        "autor": "David",
+        "tipo": "img",
+        "chiste": "chisteo-david-14.jpg"
     }
 ]
