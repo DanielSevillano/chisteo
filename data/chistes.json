@@ -665,8 +665,18 @@
         "chiste": "¿Cuáles son las series favoritas de un astrónomo?<br/>Las telescópicas."
     },
     {
+        "autor": "Jesús",
+        "tipo": "img",
+        "chiste": "chisteo-jesus-10.jpg"
+    },
+    {
         "autor": "David",
         "tipo": "img",
         "chiste": "chisteo-david-14.jpg"
+    },
+    {
+        "autor": "Jesús",
+        "tipo": "img",
+        "chiste": "chisteo-jesus-11.jpg"
     }
 ]
