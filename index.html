@@ -1,169 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="La página del chisteo, donde se vive por y para el chisteo." />
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <link rel="stylesheet" href="main.css" />
-        <title>Chisteo</title>
 
-        <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
-        <script src="main.js" defer></script>
-    </head>
-    <body>
-        <script>
-            if (localStorage.getItem("color") != undefined) document.body.classList.add(localStorage.getItem("color"));
-        </script>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="La página del chisteo, donde se vive por y para el chisteo." />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="main.css" />
+    <title>Chisteo</title>
 
-        <header>
-            <h1>🤪 Chisteo</h1>
-        </header>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
 
-        <main>
-            <section>
-                <p>Bienvenido a la página del chisteo, donde se vive por y para el chisteo.</p>
-                <p>
-                    Si no sabes qué es el chisteo, no te preocupes. El chisteo es como el aire que nos rodea: aunque muchos no alcancemos a comprender qué es y
-                    de qué está compuesto, todos podemos sentirlo. Lo importante no es conocer el chisteo, sino sentir el chisteo como si no hubiera un mañana.
-                </p>
-                <p>
-                    Espero que te puedas sumergir en este sentimiento que mueve montañas y disfrutes de esta página tanto como nosotros. Está hecha con todo el
-                    cariño del mundo.
-                </p>
-                <blockquote></blockquote>
+<body>
+    <script>
+        if (localStorage.getItem("color") != undefined) document.body.classList.add(localStorage.getItem("color"));
+    </script>
 
-                <h2>Temas</h2>
+    <header>
+        <h1>🤪 Chisteo</h1>
+    </header>
 
-                <div class="contenedor-colores">
-                    <button type="button" title="Verde" class="color" style="background-color: green" onclick="cambiarColor(undefined)"></button>
-                    <button type="button" title="Azul" class="color" style="background-color: steelblue" onclick="cambiarColor('azul')"></button>
-                    <button type="button" title="Rojo" class="color" style="background-color: firebrick" onclick="cambiarColor('rojo')"></button>
-                    <button type="button" title="Amarillo" class="color" style="background-color: gold" onclick="cambiarColor('amarillo')"></button>
-                </div>
+    <main>
+        <section>
+            <p>Bienvenido a la página del chisteo, donde se vive por y para el chisteo.</p>
+            <p>
+                Si no sabes qué es el chisteo, no te preocupes. El chisteo es como el aire que nos rodea: aunque muchos
+                no alcancemos a comprender qué es y
+                de qué está compuesto, todos podemos sentirlo. Lo importante no es conocer el chisteo, sino sentir el
+                chisteo como si no hubiera un mañana.
+            </p>
+            <p>
+                Espero que te puedas sumergir en este sentimiento que mueve montañas y disfrutes de esta página tanto
+                como nosotros. Está hecha con todo el
+                cariño del mundo.
+            </p>
+            <blockquote></blockquote>
 
-                <h3>Temas especiales</h3>
-                <div class="contenedor-colores">
-                    <button type="button" title="Kikotema" class="color" style="background-color: #ff8000" onclick="cambiarColor('kikotema')"></button>
-                    <button type="button" title="Cuencatema" class="color" style="background-color: black" onclick="cambiarColor('cuencatema')"></button>
-                </div>
-            </section>
+            <h2>Temas</h2>
 
-            <section>
-                <h1>📈 Gráficas</h1>
+            <div class="contenedor-colores">
+                <button type="button" title="Verde" class="color" style="background-color: green"
+                    onclick="cambiarColor(undefined)"></button>
+                <button type="button" title="Azul" class="color" style="background-color: steelblue"
+                    onclick="cambiarColor('azul')"></button>
+                <button type="button" title="Rojo" class="color" style="background-color: firebrick"
+                    onclick="cambiarColor('rojo')"></button>
+                <button type="button" title="Amarillo" class="color" style="background-color: gold"
+                    onclick="cambiarColor('amarillo')"></button>
+            </div>
 
-                <h2>Gráfica multivariante</h2>
-                <p>Del 1 de febrero al 8 de mayo de 2023</p>
-                <div class="contenedor-grafica">
-                    <canvas id="grafica-multivariante"></canvas>
-                </div>
+            <h3>Temas especiales</h3>
+            <div class="contenedor-colores">
+                <button type="button" title="Kikotema" class="color" style="background-color: #ff8000"
+                    onclick="cambiarColor('kikotema')"></button>
+                <button type="button" title="Cuencatema" class="color" style="background-color: black"
+                    onclick="cambiarColor('cuencatema')"></button>
+            </div>
+        </section>
 
-                <h2>Gráfica ampliada</h2>
-                <p>Del 12 de septiembre al 14 de diciembre de 2022</p>
-                <div class="contenedor-grafica">
-                    <canvas id="grafica-ampliada"></canvas>
-                </div>
+        <section>
+            <h1>📈 Gráficas</h1>
 
-                <h2>Gráfica inferida</h2>
-                <p>Del 16 de mayo al 3 de junio de 2022</p>
-                <div class="contenedor-grafica">
-                    <canvas id="grafica-inferida"></canvas>
-                </div>
-            </section>
+            <h2>Gráfica multivariante</h2>
+            <p>Del 1 de febrero al 8 de mayo de 2023</p>
+            <div class="contenedor-grafica">
+                <canvas id="grafica-multivariante"></canvas>
+            </div>
 
-            <section>
-                <h1>🏆 Ranking</h1>
-                <div class="contenedor-grafica">
-                    <canvas id="grafica-ranking" width="400" height="300"></canvas>
-                </div>
-            </section>
+            <h2>Gráfica ampliada</h2>
+            <p>Del 12 de septiembre al 14 de diciembre de 2022</p>
+            <div class="contenedor-grafica">
+                <canvas id="grafica-ampliada"></canvas>
+            </div>
 
-            <section>
-                <h1>📖 Chistes recientes</h1>
-                <div class="contenedor-chistes"></div>
+            <h2>Gráfica inferida</h2>
+            <p>Del 16 de mayo al 3 de junio de 2022</p>
+            <div class="contenedor-grafica">
+                <canvas id="grafica-inferida"></canvas>
+            </div>
+        </section>
 
-                <button type="button" onclick="location.href = 'chistes.html'">Ver todos</button>
-            </section>
+        <section>
+            <h1>🏆 Ranking</h1>
+            <div class="contenedor-grafica">
+                <canvas id="grafica-ranking" width="400" height="300"></canvas>
+            </div>
+        </section>
 
-            <section>
-                <h1>🐎 Maneo</h1>
-                <div class="contenedor-maneo">
-                    <img src="img/chisteo-dani-8.jpg" alt="Maneo man" loading="lazy" />
-                </div>
-            </section>
-        </main>
+        <section>
+            <h1>📖 Chistes recientes</h1>
+            <div class="contenedor-chistes"></div>
 
-        <footer>
-            <section>
-                <h1>Yo chisteo, nosotros chisteamos</h1>
-                <p>¿Quieres chistear y no sabes cómo hacerlo? Considera formar parte del chisteo del pueblo enviándonos tus chistes.</p>
-                <p>
-                    Todos son bienvenidos, buenos y malos, bonitos y feos. Como decía Abraham Lincoln, todos los chistes nacen iguales, pero es la última vez
-                    que lo son.
-                </p>
-                <p>
-                    Si en cambio eres un experto en el chisteo y sabes algo que nosotros no sabemos, no dudes en enviarnos sugerencias para mejorar este rincón.
-                </p>
-            </section>
+            <button type="button" onclick="location.href = 'chistes.html'">Ver todos</button>
+        </section>
 
-            <section>
-                <h2>Formulario del chisteo</h2>
-                <p>
-                    Puedes rellenar este formulario para colaborar con el chisteo y aparecer en la página. Recuerda que no es necesario completarlo entero,
-                    todos los campos son opcionales, así que envía solo aquello que quieras.
-                </p>
-                <form name="chisteo" method="POST" data-netlify="true">
-                    <div class="contenedor-formulario">
-                        <div>
-                            <label for="nombre">Nombre del chistoso</label>
-                            <input type="text" id="nombre" name="nombre" />
-                        </div>
+        <section>
+            <h1>🐎 Maneo</h1>
+            <div class="contenedor-maneo">
+                <img src="img/chisteo-dani-8.jpg" alt="Maneo man" loading="lazy" />
+            </div>
+        </section>
+    </main>
 
-                        <div>
-                            <label for="archivo">Chiste en archivo</label>
-                            <input type="file" name="archivo" id="archivo" />
-                        </div>
+    <footer>
+        <section>
+            <h1>Yo chisteo, nosotros chisteamos</h1>
+            <p>¿Quieres chistear y no sabes cómo hacerlo? Considera formar parte del chisteo del pueblo enviándonos tus
+                chistes.</p>
+            <p>
+                Todos son bienvenidos, buenos y malos, bonitos y feos. Como decía Abraham Lincoln, todos los chistes
+                nacen iguales, pero es la última vez
+                que lo son.
+            </p>
+            <p>
+                Si en cambio eres un experto en el chisteo y sabes algo que nosotros no sabemos, no dudes en enviarnos
+                sugerencias para mejorar este rincón.
+            </p>
+        </section>
 
-                        <div>
-                            <label for="chiste">Chiste escrito</label>
-                            <textarea id="chiste" name="chiste"></textarea>
-                        </div>
-
-                        <div>
-                            <label for="maneo">Maneo</label>
-                            <input type="file" name="maneo" id="maneo" />
-                        </div>
+        <section>
+            <h2>Formulario del chisteo</h2>
+            <p>
+                Puedes rellenar este formulario para colaborar con el chisteo y aparecer en la página. Recuerda que no
+                es necesario completarlo entero,
+                todos los campos son opcionales, así que envía solo aquello que quieras.
+            </p>
+            <form name="chisteo" method="POST" data-netlify="true">
+                <div class="contenedor-formulario">
+                    <div>
+                        <label for="nombre">Nombre del chistoso</label>
+                        <input type="text" id="nombre" name="nombre" />
                     </div>
 
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
+                    <div>
+                        <label for="archivo">Chiste en archivo</label>
+                        <input type="file" name="archivo" id="archivo" />
+                    </div>
 
-            <section>
-                <h2>Agradecimientos</h2>
-                <ul>
-                    <li><b>Antonio</b>, por darle sentido al chisteo.</li>
-                    <li><b>Álvaro y Jacque</b>, por crear por accidente el nombre del chisteo.</li>
-                    <li><b>Jacque, Jorge, David y Daniel</b>, por llevar el chisteo cada día.</li>
-                    <li><b>Jorge</b>, por hacer la primera gráfica del chisteo.</li>
-                    <li><b>Stallone</b>, por regalarnos Rocky V.</li>
-                    <li><b>Manuel</b>, por llamarse Manuel.</li>
-                    <li><b>Daniel</b>, por hacer esta página web.</li>
-                    <li>
-                        <b><a href="https://chisteo.blogspot.com">El blog del chisteo</a></b
-                        >, por servir de inspiración para esta página.
-                    </li>
-                    <li>Todos los que han participado en el chisteo de una forma u otra, por formar parte de esto.</li>
-                </ul>
-            </section>
+                    <div>
+                        <label for="chiste">Chiste escrito</label>
+                        <textarea id="chiste" name="chiste"></textarea>
+                    </div>
 
-            <section>
-                <p style="text-align: center">
-                    🧐 Código fuente de la página web disponible en
-                    <a href="https://github.com/DanielSevillano/chisteo">GitHub</a>
-                </p>
-            </section>
-        </footer>
-    </body>
+                    <div>
+                        <label for="maneo">Maneo</label>
+                        <input type="file" name="maneo" id="maneo" />
+                    </div>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Agradecimientos</h2>
+            <ul>
+                <li><b>Antonio</b>, por darle sentido al chisteo.</li>
+                <li><b>Álvaro y Jacque</b>, por crear por accidente el nombre del chisteo.</li>
+                <li><b>Jacque, Jorge, David y Daniel</b>, por llevar el chisteo cada día.</li>
+                <li><b>Jorge</b>, por hacer la primera gráfica del chisteo.</li>
+                <li><b>Stallone</b>, por regalarnos Rocky V.</li>
+                <li><b>Manuel</b>, por llamarse Manuel.</li>
+                <li><b>Daniel</b>, por hacer esta página web.</li>
+                <li>
+                    <b><a href="https://chisteo.blogspot.com">El blog del chisteo</a></b>, por servir de inspiración
+                    para esta página.
+                </li>
+                <li>Todos los que han participado en el chisteo de una forma u otra, por formar parte de esto.</li>
+            </ul>
+        </section>
+
+        <section>
+            <p style="text-align: center">
+                🧐 Código fuente de la página web disponible en
+                <a href="https://github.com/DanielSevillano/chisteo">GitHub</a>
+            </p>
+        </section>
+    </footer>
+</body>
+
 </html>
