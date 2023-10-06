@@ -135,11 +135,6 @@
         "chiste": "chisteo-dani-3.jpg"
     },
     {
-        "autor": "Dani",
-        "tipo": "p",
-        "chiste": "— ¿Dónde vas gitano?<br>— @"
-    },
-    {
         "autor": "Jose",
         "tipo": "p",
         "chiste": "El otro día fui a un banquete de caníbales y me dieron la espalda."
@@ -688,5 +683,15 @@
         "autor": "David",
         "tipo": "img",
         "chiste": "chisteo-david-15.png"
+    },
+    {
+        "autor": "Jacque",
+        "tipo": "p",
+        "chiste": "— Manolo, ¿te sabes un chiste de matemáticos?<br/>— Más o menos, ¿por?"
+    },
+    {
+        "autor": "David",
+        "tipo": "p",
+        "chiste": "— Uy, he entrado sin querer en una web porno.<br/>— Eso te pasa porno leer bien."
     }
 ]
