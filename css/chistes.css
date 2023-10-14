@@ -1,12 +1,10 @@
-@import url(common.css);
-
 /********************
 Chistes
 ********************/
 
 .contenedor-chistes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
     grid-template-rows: masonry;
     gap: 10px;
 }
@@ -55,6 +53,7 @@ Filtros
     flex-direction: row;
     gap: 5px;
     flex-wrap: wrap;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 

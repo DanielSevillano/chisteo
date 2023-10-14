@@ -1,9 +1,8 @@
-import { BarController, BarElement, CategoryScale, Chart, Legend, LinearScale, LineController, LineElement, PointElement, Tooltip } from "https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.js/+esm";
-export { graficaChisteo, rankingChistes };
+import { CategoryScale, Chart, Legend, LinearScale, LineController, LineElement, PointElement, Tooltip } from "https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.js/+esm";
 
-Chart.register(BarController, BarElement, LineController, LineElement, PointElement, CategoryScale, LinearScale, Tooltip, Legend);
+Chart.register(LineController, LineElement, PointElement, CategoryScale, LinearScale, Tooltip, Legend);
 
-async function graficaChisteo(url, id) {
+async function crearGrafica(url, id) {
     const ejeX = [];
     const ejeY1 = [];
     const ejeY2 = [];
@@ -50,51 +49,15 @@ async function graficaChisteo(url, id) {
     return grafica;
 }
 
-function rankingChistes(datos, numeroPersonas) {
-    const autores = new Map([]);
+const datosGraficas = [
+    { archivo: "data/chisteo-inferido.json", elemento: "grafica-inferida" },
+    { archivo: "data/chisteo-ampliado.json", elemento: "grafica-ampliada" },
+    { archivo: "data/chisteo-multivariante.json", elemento: "grafica-multivariante" },
+];
 
-    datos.forEach((dato) => {
-        const autor = dato.autor;
-
-        if (autores.has(autor)) autores.set(autor, autores.get(autor) + 1);
-        else autores.set(autor, 1);
+const graficas = [];
+datosGraficas.forEach((dato) => {
+    crearGrafica(dato.archivo, dato.elemento).then((grafica) => {
+        graficas.push(grafica);
     });
-
-    // Ranking
-    const ranking = Array.from(autores.entries()).sort((a, b) => b[1] - a[1]);
-
-    // Gráfica
-    const ejeY = [];
-    const ejeX = [];
-
-    ranking.slice(0, numeroPersonas).forEach((dato) => {
-        ejeY.push(dato[0]);
-        ejeX.push(dato[1]);
-    });
-
-    const ctx = document.getElementById("grafica-ranking");
-    const grafica = new Chart(ctx, {
-        type: "bar",
-        data: {
-            labels: ejeY,
-            datasets: [
-                {
-                    label: "Chistes",
-                    data: ejeX,
-                    backgroundColor: getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary"),
-                },
-            ],
-        },
-        options: {
-            maintainAspectRatio: false,
-            indexAxis: "y",
-            plugins: {
-                legend: {
-                    display: false
-                }
-            },
-        },
-    });
-
-    return grafica;
-}
+});

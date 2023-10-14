@@ -263,7 +263,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     margin: 0;
     background-color: var(--md-sys-color-background);
     color: var(--md-sys-color-on-background);
@@ -285,8 +284,7 @@ header {
 
 main,
 footer {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     max-width: 100ch;
     box-sizing: border-box;
 }
@@ -299,10 +297,15 @@ main {
 
 footer {
     gap: 10px;
+    margin-top: 30px;
     padding: 10px 30px 20px 30px;
     background-color: var(--md-sys-color-surface-variant);
     color: var(--md-sys-color-on-surface-variant);
     border-radius: 20px 20px 0 0;
+}
+
+section {
+    margin-top: 40px;
 }
 
 /********************
@@ -310,15 +313,16 @@ Texto
 ********************/
 
 h1 {
-    font-size: x-large;
+    margin-right: auto;
+    font-size: 1.5rem;
 }
 
 h2 {
-    font-size: large;
+    font-size: 1.35rem;
 }
 
 h3 {
-    font-size: medium;
+    font-size: 1.125rem;
 }
 
 a {
@@ -348,84 +352,63 @@ audio {
 }
 
 /********************
-Temas especiales
+Botones
 ********************/
 
-.kikotema {
-    --md-sys-color-primary: #ff8000;
-    --md-sys-color-on-primary: black;
-    --md-sys-color-primary-container: #ff8000;
-    --md-sys-color-on-primary-container: black;
-    --md-sys-color-secondary: #ff8000;
-    --md-sys-color-on-secondary: black;
-    --md-sys-color-secondary-container: #ff8000;
-    --md-sys-color-on-secondary-container: black;
-    --md-sys-color-tertiary: #ff8000;
-    --md-sys-color-on-tertiary: black;
-    --md-sys-color-tertiary-container: #ff8000;
-    --md-sys-color-on-tertiary-container: black;
-    --md-sys-color-background: white;
-    --md-sys-color-on-background: black;
-    --md-sys-color-surface: white;
-    --md-sys-color-on-surface: black;
-    --md-sys-color-surface-variant: #ff8000;
-    --md-sys-color-on-surface-variant: black;
-    --md-sys-color-outline: black;
-    --md-sys-color-inverse-on-surface: black;
-    --md-sys-color-inverse-surface: black;
-    --md-sys-color-inverse-primary: #fcbf82;
-    --md-sys-color-shadow: black;
-    --md-sys-color-surface-tint: black;
-    --md-sys-color-outline-variant: black;
-    --md-sys-color-scrim: black;
+button,
+input::file-selector-button,
+a.icono {
+    border-radius: 20px;
+    border-color: transparent;
+    transition: opacity 300ms;
+    cursor: pointer;
 }
 
-.cuencatema {
-    --md-sys-color-primary: black;
-    --md-sys-color-on-primary: white;
-    --md-sys-color-primary-container: transparent;
-    --md-sys-color-on-primary-container: black;
-    --md-sys-color-secondary: black;
-    --md-sys-color-on-secondary: white;
-    --md-sys-color-secondary-container: transparent;
-    --md-sys-color-on-secondary-container: black;
-    --md-sys-color-tertiary: transparent;
-    --md-sys-color-on-tertiary: black;
-    --md-sys-color-tertiary-container: black;
-    --md-sys-color-on-tertiary-container: white;
-    --md-sys-color-background: white;
-    --md-sys-color-on-background: black;
-    --md-sys-color-surface: white;
-    --md-sys-color-on-surface: black;
-    --md-sys-color-surface-variant: transparent;
-    --md-sys-color-on-surface-variant: black;
-    --md-sys-color-outline: black;
-    --md-sys-color-inverse-on-surface: black;
-    --md-sys-color-inverse-surface: black;
-    --md-sys-color-inverse-primary: gray;
-    --md-sys-color-shadow: black;
-    --md-sys-color-surface-tint: black;
-    --md-sys-color-outline-variant: black;
-    --md-sys-color-scrim: black;
+button {
+    padding: 8px 24px;
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    font-weight: bold;
 }
 
-.kikotema header,
-.kikotema article,
-.kikotema footer,
-.kikotema button,
-.kikotema input::file-selector-button {
-    outline: 1px solid var(--md-sys-color-outline);
+input::file-selector-button {
+    padding: 4px 10px;
+    background-color: var(--md-sys-color-secondary);
+    color: var(--md-sys-color-on-secondary);
 }
 
-.kikotema *,
-.kikotema input::file-selector-button {
-    border-radius: 0 !important;
+button:hover,
+input::file-selector-button:hover,
+a.icono:hover {
+    opacity: 0.85;
 }
 
-@media (prefers-color-scheme: dark) {
+button:active,
+input::file-selector-button:active,
+a.icono:active {
+    opacity: 0.7;
+}
 
-    .kikotema canvas,
-    .cuencatema canvas {
-        filter: none;
-    }
+.icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 18px;
+}
+
+button.icono span {
+    width: 100%;
+    text-align: center;
+}
+
+a.icono {
+    background-color: var(--md-sys-color-primary);
+    justify-content: center;
+}
+
+.icono svg {
+    fill: var(--md-sys-color-on-primary);
 }

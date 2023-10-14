@@ -1,7 +1,13 @@
-@import url(common.css);
+ul {
+    padding-left: 1.5em;
+    line-height: 1.6;
+}
 
-h1 {
-    margin-right: auto;
+.tarjeta {
+    padding: 10px 20px;
+    background-color: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
+    border-radius: 20px;
 }
 
 /********************
@@ -20,68 +26,6 @@ blockquote::before {
 
 blockquote::after {
     content: close-quote;
-}
-
-/********************
-Botones
-********************/
-
-button,
-input::file-selector-button,
-a.icono {
-    border-radius: 20px;
-    border-color: transparent;
-    transition: opacity 300ms;
-    cursor: pointer;
-}
-
-button {
-    padding: 8px 24px;
-    background-color: var(--md-sys-color-primary);
-    color: var(--md-sys-color-on-primary);
-    font-weight: bold;
-}
-
-input::file-selector-button {
-    padding: 4px 10px;
-    background-color: var(--md-sys-color-secondary);
-    color: var(--md-sys-color-on-secondary);
-}
-
-button:hover,
-input::file-selector-button:hover,
-a.icono:hover {
-    opacity: 0.85;
-}
-
-button:active,
-input::file-selector-button:active,
-a.icono:active {
-    opacity: 0.7;
-}
-
-.icono {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    font-size: 18px;
-}
-
-button.icono span {
-    width: 100%;
-    text-align: center;
-}
-
-a.icono {
-    background-color: var(--md-sys-color-primary);
-    justify-content: center;
-}
-
-.icono svg {
-    fill: var(--md-sys-color-on-primary);
 }
 
 /********************
@@ -131,32 +75,28 @@ button#cerrar {
     background-color: gold;
 }
 
-#kikotema {
-    background-color: #ff8000;
-}
-
-#cuencatema {
-    background-color: black;
-}
-
 /********************
-Gráficas
+Navegación
 ********************/
 
-.contenedor-grafica {
-    position: relative;
-    max-width: 90ch;
-    width: 90vw;
-    min-height: 200px;
-    max-height: 45ch;
-    height: 40vw;
-    margin-block: 30px;
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+    gap: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-    canvas {
-        filter: invert(1) hue-rotate(180deg) brightness(1.1);
-    }
+nav h3 {
+    margin-bottom: 0;
+}
+
+nav p {
+    margin-top: 0.5em;
+}
+
+nav .icono {
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
 }
 
 /********************
@@ -165,7 +105,7 @@ Chistes
 
 .contenedor-chistes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
     grid-template-rows: masonry;
     gap: 10px;
 }
@@ -188,32 +128,6 @@ article>p:last-child {
     color: var(--md-sys-color-on-secondary);
     font-size: small;
     border-radius: 15px;
-}
-
-section>button:last-child {
-    display: block;
-    margin-inline: auto;
-    margin-top: 15px;
-}
-
-/********************
-Maneo
-********************/
-
-.contenedor-maneo {
-    display: grid;
-    grid-template-rows: 200px;
-    grid-auto-flow: column;
-    gap: 10px;
-    max-width: 90vw;
-    overflow-x: scroll;
-}
-
-.contenedor-maneo img {
-    margin: 0;
-    height: 200px;
-    width: auto;
-    max-width: none;
 }
 
 /********************

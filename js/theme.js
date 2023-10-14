@@ -1,0 +1,1 @@
+if (localStorage.getItem("color") != undefined) document.body.classList.add(localStorage.getItem("color"));

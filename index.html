@@ -8,14 +8,13 @@
     <title>Chisteo</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
     <script type="module" src="js/main.js" async></script>
 </head>
 
 <body>
-    <script>
-        if (localStorage.getItem("color") != undefined) document.body.classList.add(localStorage.getItem("color"));
-    </script>
+    <script src="js/theme.js"></script>
 
     <header>
         <h1>🤪 Chisteo</h1>
@@ -52,12 +51,6 @@
                 <button type="button" title="Amarillo" class="color" id="amarillo"></button>
             </div>
 
-            <h3>Temas especiales</h3>
-            <div class="contenedor-colores">
-                <button type="button" title="Kikotema" class="color" id="kikotema"></button>
-                <button type="button" title="Cuencatema" class="color" id="cuencatema"></button>
-            </div>
-
             <button id="cerrar">Cerrar</button>
         </dialog>
 
@@ -78,70 +71,65 @@
         </section>
 
         <section>
-            <h1>🏆 Ranking</h1>
+            <h2>🧭 Navegación</h2>
+
+            <nav>
+                <div class="tarjeta">
+                    <h3>Chistes</h3>
+                    <p>Descubre todos los chistes enviados por nuestra comunidad.</p>
+
+                    <a class="icono" href="chistes.html">
+                        <svg height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Maneo</h3>
+                    <p>Disfruta de todas las palabras originales que empiezan por <i>Man</i>.</p>
+
+                    <a class="icono" href="maneo.html">
+                        <svg height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Gráficas</h3>
+                    <p>Revisa los resultados y las aproximaciones de todos los chisteos.</p>
+
+                    <a class="icono" href="graficas.html">
+                        <svg height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </section>
+
+        <section>
+            <h2>⌚ Chistes recientes</h2>
+            <div class="contenedor-chistes"></div>
+        </section>
+
+        <section>
+            <h2>🏆 Ranking</h2>
             <div class="contenedor-grafica">
                 <canvas id="grafica-ranking" width="400" height="300"></canvas>
-            </div>
-        </section>
-
-        <section>
-            <h1>📖 Chistes recientes</h1>
-            <div class="contenedor-chistes"></div>
-
-            <button type="button" onclick="location.href = 'chistes.html'">Ver todos</button>
-        </section>
-
-        <section>
-            <h1>🐎 Maneo</h1>
-            <div class="contenedor-maneo">
-                <img src="img/chisteo-dani-8.jpg" alt="Maneo man" loading="lazy">
-                <img src="img/maneo-mantecado.jpg" alt="Maneo mantecado" loading="lazy">
-                <img src="img/maneo-mango.jpg" alt="Maneo mango" loading="lazy">
-                <img src="img/maneo-mandril.jpg" alt="Maneo mandril" loading="lazy">
-                <img src="img/maneo-mancuerna.jpg" alt="Maneo mancuerna" loading="lazy">
-                <img src="img/maneo-manguera.jpg" alt="Maneo manguera" loading="lazy">
-                <img src="img/maneo-mantequilla.jpg" alt="Maneo mantequilla" loading="lazy">
-                <img src="img/maneo-manga.jpg" alt="Maneo manga" loading="lazy">
-                <img src="img/maneo-manguitos.jpg" alt="Maneo manguitos" loading="lazy">
-                <img src="img/maneo-manguito.jpg" alt="Maneo manguito" loading="lazy">
-                <img src="img/maneo-manjula.jpg" alt="Maneo manjula" loading="lazy">
-                <img src="img/maneo-museo.jpg" alt="Maneo museo" loading="lazy">
-                <img src="img/maneo-manifold.jpg" alt="Maneo manifold" loading="lazy">
-            </div>
-        </section>
-
-        <section>
-            <h1>📈 Gráficas</h1>
-
-            <h2>Gráfica multivariante</h2>
-            <p>Del 1 de febrero al 8 de mayo de 2023</p>
-            <div class="contenedor-grafica">
-                <canvas id="grafica-multivariante"></canvas>
-            </div>
-
-            <h2>Gráfica ampliada</h2>
-            <p>Del 12 de septiembre al 14 de diciembre de 2022</p>
-            <div class="contenedor-grafica">
-                <canvas id="grafica-ampliada"></canvas>
-            </div>
-
-            <h2>Gráfica inferida</h2>
-            <p>Del 16 de mayo al 3 de junio de 2022</p>
-            <div class="contenedor-grafica">
-                <canvas id="grafica-inferida"></canvas>
             </div>
         </section>
     </main>
 
     <footer>
         <section>
-            <h1>Yo chisteo, nosotros chisteamos</h1>
             <p>¿Quieres chistear y no sabes cómo hacerlo? Considera formar parte del chisteo del pueblo enviándonos tus
-                chistes.</p>
-            <p>
-                Todos son bienvenidos, buenos y malos, bonitos y feos. Como decía Abraham Lincoln, todos los chistes
-                nacen iguales, pero es la última vez
-                que lo son.
+                chistes. Todos son bienvenidos, buenos y malos, bonitos y feos. Como decía Abraham Lincoln, todos los
+                chistes nacen iguales, pero es la última vez que lo son.
             </p>
             <p>
                 Si en cambio eres un experto en el chisteo y sabes algo que nosotros no sabemos, no dudes en enviarnos
@@ -188,16 +176,15 @@
             <ul>
                 <li><b>Antonio</b>, por darle sentido al chisteo.</li>
                 <li><b>Álvaro y Jacque</b>, por crear por accidente el nombre del chisteo.</li>
-                <li><b>Jacque, Jorge, David y Daniel</b>, por llevar el chisteo cada día.</li>
+                <li><b>Jacque, Jorge y David</b>, por ayudarme a llevar el chisteo cada día.</li>
                 <li><b>Jorge</b>, por hacer la primera gráfica del chisteo.</li>
                 <li><b>Stallone</b>, por regalarnos Rocky V.</li>
                 <li><b>Manuel</b>, por llamarse Manuel.</li>
-                <li><b>Daniel</b>, por hacer esta página web.</li>
                 <li>
                     <b><a href="https://chisteo.blogspot.com">El blog del chisteo</a></b>, por servir de inspiración
                     para esta página.
                 </li>
-                <li>Todos los que han participado en el chisteo de una forma u otra, por formar parte de esto.</li>
+                <li>Todos los que han participado en el chisteo de alguna manera, por formar parte de esto.</li>
             </ul>
         </section>
     </footer>

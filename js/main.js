@@ -1,4 +1,6 @@
-import { graficaChisteo, rankingChistes } from "./charts.js";
+import { BarController, BarElement, CategoryScale, Chart, LinearScale, PointElement } from "https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.js/+esm";
+
+Chart.register(BarController, BarElement, PointElement, CategoryScale, LinearScale);
 
 function cambiarColor(color) {
     if (color == localStorage.getItem("color")) return;
@@ -7,16 +9,14 @@ function cambiarColor(color) {
     if (color != undefined) document.body.classList.add(color);
     localStorage.setItem("color", color);
 
-    graficas.forEach((grafica) => {
-        const datos = grafica.data.datasets;
-        if (datos.length === 2) {
-            datos[0].borderColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary");
-            datos[1].borderColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-inverse-primary");
-        } else {
-            datos[0].backgroundColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary");
-        }
-        grafica.update();
-    });
+    const datos = grafica.data.datasets;
+    if (datos.length === 2) {
+        datos[0].borderColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary");
+        datos[1].borderColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-inverse-primary");
+    } else {
+        datos[0].backgroundColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary");
+    }
+    grafica.update();
 }
 
 function chistesRecientes(datos, numeroChistes) {
@@ -51,9 +51,60 @@ async function datosChistes() {
     const respuesta = await fetch("data/chistes.json");
     const datos = await respuesta.json();
 
-    chistesRecientes(datos, 10);
-    graficas.push(rankingChistes(datos, 5));
+    chistesRecientes(datos, 18);
+    grafica = rankingChistes(datos, 5);
 }
+
+function rankingChistes(datos, numeroPersonas) {
+    const autores = new Map([]);
+
+    datos.forEach((dato) => {
+        const autor = dato.autor;
+
+        if (autores.has(autor)) autores.set(autor, autores.get(autor) + 1);
+        else autores.set(autor, 1);
+    });
+
+    // Ranking
+    const ranking = Array.from(autores.entries()).sort((a, b) => b[1] - a[1]);
+
+    // Gráfica
+    const ejeY = [];
+    const ejeX = [];
+
+    ranking.slice(0, numeroPersonas).forEach((dato) => {
+        ejeY.push(dato[0]);
+        ejeX.push(dato[1]);
+    });
+
+    const ctx = document.getElementById("grafica-ranking");
+    const grafica = new Chart(ctx, {
+        type: "bar",
+        data: {
+            labels: ejeY,
+            datasets: [
+                {
+                    label: "Chistes",
+                    data: ejeX,
+                    backgroundColor: getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary"),
+                },
+            ],
+        },
+        options: {
+            maintainAspectRatio: false,
+            indexAxis: "y",
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+        },
+    });
+
+    return grafica;
+}
+
+let grafica = null;
 
 // Frase célebre
 const frases = [
@@ -89,20 +140,6 @@ botonesColor.forEach((boton) => {
     boton.addEventListener("click", () => {
         if (boton.id === "verde") cambiarColor(undefined);
         else cambiarColor(boton.id);
-    });
-});
-
-// Gráficas
-const datosGraficas = [
-    { archivo: "data/chisteo-inferido.json", elemento: "grafica-inferida" },
-    { archivo: "data/chisteo-ampliado.json", elemento: "grafica-ampliada" },
-    { archivo: "data/chisteo-multivariante.json", elemento: "grafica-multivariante" },
-];
-
-const graficas = [];
-datosGraficas.forEach((dato) => {
-    graficaChisteo(dato.archivo, dato.elemento).then((grafica) => {
-        graficas.push(grafica);
     });
 });
 
