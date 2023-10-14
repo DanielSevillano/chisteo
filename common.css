@@ -255,6 +255,10 @@
 Estructura
 ********************/
 
+html {
+    color-scheme: light dark;
+}
+
 body {
     display: flex;
     flex-direction: column;
