@@ -48,9 +48,39 @@ input::file-selector-button:hover {
     cursor: pointer;
 }
 
+button.icono {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 18px;
+    border-radius: 100px;
+}
+
+button.icono span {
+    width: 100%;
+    text-align: center;
+}
+
 /********************
-Colores
+Diálogo
 ********************/
+
+dialog {
+    padding: 25px 40px;
+    background-color: var(--background);
+    border: none;
+    border-radius: 20px;
+}
+
+dialog::backdrop {
+    background-color: hsla(0, 0%, 50%, 0.5);
+}
+
+button#cerrar {
+    margin-block: 20px;
+}
 
 .contenedor-colores {
     display: flex;
@@ -104,7 +134,7 @@ article {
     border-radius: 20px;
 }
 
-article > p:last-child {
+article>p:last-child {
     width: fit-content;
     margin-left: auto;
     padding: 5px 10px;
@@ -114,7 +144,7 @@ article > p:last-child {
     border-radius: 15px;
 }
 
-section > button:last-child {
+section>button:last-child {
     display: block;
     margin-inline: auto;
     margin-top: 15px;
@@ -151,7 +181,7 @@ Formulario
     gap: 20px;
 }
 
-.contenedor-formulario > div {
+.contenedor-formulario>div {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -189,7 +219,7 @@ textarea:focus-visible {
     outline-color: var(--secondary);
 }
 
-form > button {
+form>button {
     margin-inline: auto;
     font-weight: bold;
 }

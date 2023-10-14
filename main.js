@@ -1,3 +1,15 @@
+const botonTemas = document.querySelector("#temas");
+const dialogo = document.querySelector("dialog");
+const botonCerrar = document.querySelector("#cerrar");
+
+botonTemas.addEventListener("click", () => {
+    dialogo.showModal();
+})
+
+botonCerrar.addEventListener("click", () => {
+    dialogo.close();
+})
+
 function cambiarColor(color) {
     if (color == localStorage.getItem("color")) return;
     document.body.removeAttribute("class");
