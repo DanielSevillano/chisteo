@@ -27,10 +27,12 @@ Botones
 ********************/
 
 button,
-input::file-selector-button {
+input::file-selector-button,
+a.icono {
     border-radius: 20px;
     border-color: transparent;
     transition: opacity 300ms;
+    cursor: pointer;
 }
 
 button {
@@ -47,19 +49,25 @@ input::file-selector-button {
 }
 
 button:hover,
-input::file-selector-button:hover {
+input::file-selector-button:hover,
+a.icono:hover {
     opacity: 0.85;
-    cursor: pointer;
+}
+
+button:active,
+input::file-selector-button:active,
+a.icono:active {
+    opacity: 0.7;
 }
 
 .icono {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     padding: 0;
     font-size: 18px;
-    border-radius: 100px;
 }
 
 button.icono span {
@@ -72,7 +80,7 @@ a.icono {
     justify-content: center;
 }
 
-a.icono svg {
+.icono svg {
     fill: var(--md-sys-color-on-primary);
 }
 
