@@ -72,6 +72,7 @@ dialog {
     background-color: var(--md-sys-color-background);
     border: none;
     border-radius: 20px;
+    color: var(--md-sys-color-on-background);
 }
 
 dialog::backdrop {
@@ -91,6 +92,30 @@ button#cerrar {
     aspect-ratio: 1;
     border-radius: 50%;
     border: 1px solid var(--md-sys-color-outline);
+}
+
+#verde {
+    background-color: green;
+}
+
+#azul {
+    background-color: steelblue;
+}
+
+#rojo {
+    background-color: firebrick;
+}
+
+#amarillo {
+    background-color: gold;
+}
+
+#kikotema {
+    background-color: #ff8000;
+}
+
+#cuencatema {
+    background-color: black;
 }
 
 /********************

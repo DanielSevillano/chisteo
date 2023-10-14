@@ -414,7 +414,7 @@ Temas especiales
 .kikotema footer,
 .kikotema button,
 .kikotema input::file-selector-button {
-    border: 1px solid var(--md-sys-color-outline);
+    outline: 1px solid var(--md-sys-color-outline);
 }
 
 .kikotema *,
