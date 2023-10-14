@@ -1,7 +1,7 @@
-import { BarController, BarElement, CategoryScale, Chart, LinearScale, LineController, LineElement, PointElement, Tooltip } from "https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.js/+esm";
+import { BarController, BarElement, CategoryScale, Chart, Legend, LinearScale, LineController, LineElement, PointElement, Tooltip } from "https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.js/+esm";
 export { graficaChisteo, rankingChistes };
 
-Chart.register(BarController, BarElement, LineController, LineElement, PointElement, CategoryScale, LinearScale, Tooltip);
+Chart.register(BarController, BarElement, LineController, LineElement, PointElement, CategoryScale, LinearScale, Tooltip, Legend);
 
 async function graficaChisteo(url, id) {
     const ejeX = [];
@@ -88,6 +88,11 @@ function rankingChistes(datos, numeroPersonas) {
         options: {
             maintainAspectRatio: false,
             indexAxis: "y",
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
         },
     });
 
