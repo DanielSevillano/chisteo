@@ -70,7 +70,7 @@ const frases = [
 const cita = document.querySelector("blockquote");
 cita.textContent = frases[Math.floor(Math.random() * frases.length)];
 
-// Temas
+// Diálogo
 const botonTemas = document.querySelector("#temas");
 const dialogo = document.querySelector("dialog");
 const botonCerrar = document.querySelector("#cerrar");
@@ -81,6 +81,15 @@ botonTemas.addEventListener("click", () => {
 
 botonCerrar.addEventListener("click", () => {
     dialogo.close();
+});
+
+// Temas
+const botonesColor = document.querySelectorAll(".color");
+botonesColor.forEach((boton) => {
+    boton.addEventListener("click", () => {
+        if (boton.id === "verde") cambiarColor(undefined);
+        else cambiarColor(boton.id);
+    });
 });
 
 // Gráficas
