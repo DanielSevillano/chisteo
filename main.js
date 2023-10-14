@@ -1,15 +1,3 @@
-const botonTemas = document.querySelector("#temas");
-const dialogo = document.querySelector("dialog");
-const botonCerrar = document.querySelector("#cerrar");
-
-botonTemas.addEventListener("click", () => {
-    dialogo.showModal();
-})
-
-botonCerrar.addEventListener("click", () => {
-    dialogo.close();
-})
-
 function cambiarColor(color) {
     if (color == localStorage.getItem("color")) return;
     document.body.removeAttribute("class");
@@ -20,10 +8,10 @@ function cambiarColor(color) {
     graficas.forEach((grafica) => {
         const datos = grafica.data.datasets;
         if (datos.length === 2) {
-            datos[0].borderColor = getComputedStyle(document.body).getPropertyValue("--primary");
-            datos[1].borderColor = getComputedStyle(document.body).getPropertyValue("--inverse-primary");
+            datos[0].borderColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary");
+            datos[1].borderColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-inverse-primary");
         } else {
-            datos[0].backgroundColor = getComputedStyle(document.body).getPropertyValue("--primary");
+            datos[0].backgroundColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary");
         }
         grafica.update();
     });
@@ -54,12 +42,12 @@ async function graficaChisteo(url, id) {
                 {
                     label: "Chisteo exacto",
                     data: ejeY1,
-                    borderColor: getComputedStyle(document.body).getPropertyValue("--primary"),
+                    borderColor: getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary"),
                 },
                 {
                     label: "Aproximación",
                     data: ejeY2,
-                    borderColor: getComputedStyle(document.body).getPropertyValue("--inverse-primary"),
+                    borderColor: getComputedStyle(document.body).getPropertyValue("--md-sys-color-inverse-primary"),
                 },
             ],
         },
@@ -107,7 +95,7 @@ function rankingChistes(datos, numeroPersonas) {
                 {
                     label: "Chistes",
                     data: ejeX,
-                    backgroundColor: getComputedStyle(document.body).getPropertyValue("--primary"),
+                    backgroundColor: getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary"),
                 },
             ],
         },
@@ -171,17 +159,17 @@ const frases = [
 const cita = document.querySelector("blockquote");
 cita.textContent = frases[Math.floor(Math.random() * frases.length)];
 
-// Maneo
-const datosManeo = ["Mantecado", "Mango", "Mandril", "Mancuerna", "Manguera", "Mantequilla", "Manga", "Manguitos", "Manguito", "Manjula", "Museo", "Manifold"];
+// Temas
+const botonTemas = document.querySelector("#temas");
+const dialogo = document.querySelector("dialog");
+const botonCerrar = document.querySelector("#cerrar");
 
-const contenedorManeo = document.querySelector(".contenedor-maneo");
-datosManeo.forEach((dato) => {
-    const nombre = dato.toLowerCase();
-    const imagen = document.createElement("img");
-    imagen.src = "img/maneo-" + nombre + ".jpg";
-    imagen.alt = "Maneo " + nombre;
-    imagen.loading = "lazy";
-    contenedorManeo.append(imagen);
+botonTemas.addEventListener("click", () => {
+    dialogo.showModal();
+});
+
+botonCerrar.addEventListener("click", () => {
+    dialogo.close();
 });
 
 // Gráficas

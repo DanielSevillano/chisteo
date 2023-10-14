@@ -16,8 +16,8 @@ article {
     flex-direction: column;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: var(--secondary-container);
-    color: var(--on-secondary-container);
+    background-color: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
     border-radius: 20px;
 }
 
@@ -35,15 +35,15 @@ article div:last-child {
 article div p {
     width: fit-content;
     padding: 5px 10px;
-    background-color: var(--secondary);
-    color: var(--on-secondary);
+    background-color: var(--md-sys-color-secondary);
+    color: var(--md-sys-color-on-secondary);
     font-size: small;
     border-radius: 15px;
 }
 
 article div p:first-child {
-    background-color: var(--primary);
-    color: var(--on-primary);
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
 }
 
 /********************
@@ -64,9 +64,9 @@ button {
     align-items: center;
     gap: 7px;
     padding: 8px 16px;
-    background-color: var(--surface);
-    border: 1px solid var(--outline);
-    color: var(--on-surface);
+    background-color: var(--md-sys-color-surface);
+    border: 1px solid var(--md-sys-color-outline);
+    color: var(--md-sys-color-on-surface);
     border-radius: 10px;
     font-size: small;
     font-weight: bold;
@@ -79,8 +79,8 @@ button:hover {
 
 button:hover,
 button.seleccionado {
-    background-color: var(--tertiary-container);
-    color: var(--on-tertiary-container);
+    background-color: var(--md-sys-color-tertiary-container);
+    color: var(--md-sys-color-on-tertiary-container);
 }
 
 small {
@@ -89,13 +89,13 @@ small {
     justify-content: center;
     aspect-ratio: 1/1;
     width: 25px;
-    background-color: var(--primary);
-    color: var(--on-primary);
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
     border-radius: 100%;
     transition: background-color 200ms;
 }
 
 button.seleccionado small {
-    background-color: var(--secondary);
-    color: var(--on-secondary);
+    background-color: var(--md-sys-color-secondary);
+    color: var(--md-sys-color-on-secondary);
 }

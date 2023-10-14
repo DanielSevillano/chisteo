@@ -31,15 +31,15 @@ input::file-selector-button {
 
 button {
     padding: 8px 24px;
-    background-color: var(--primary);
-    color: var(--on-primary);
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
     font-weight: bold;
 }
 
 input::file-selector-button {
     padding: 4px 10px;
-    background-color: var(--secondary);
-    color: var(--on-secondary);
+    background-color: var(--md-sys-color-secondary);
+    color: var(--md-sys-color-on-secondary);
 }
 
 button:hover,
@@ -69,7 +69,7 @@ Diálogo
 
 dialog {
     padding: 25px 40px;
-    background-color: var(--background);
+    background-color: var(--md-sys-color-background);
     border: none;
     border-radius: 20px;
 }
@@ -90,7 +90,7 @@ button#cerrar {
 .color {
     aspect-ratio: 1;
     border-radius: 50%;
-    border: 1px solid var(--outline);
+    border: 1px solid var(--md-sys-color-outline);
 }
 
 /********************
@@ -129,8 +129,8 @@ article {
     flex-direction: column;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: var(--secondary-container);
-    color: var(--on-secondary-container);
+    background-color: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
     border-radius: 20px;
 }
 
@@ -138,8 +138,8 @@ article>p:last-child {
     width: fit-content;
     margin-left: auto;
     padding: 5px 10px;
-    background-color: var(--secondary);
-    color: var(--on-secondary);
+    background-color: var(--md-sys-color-secondary);
+    color: var(--md-sys-color-on-secondary);
     font-size: small;
     border-radius: 15px;
 }
@@ -202,9 +202,9 @@ input[type="text"],
 textarea {
     box-sizing: border-box;
     padding: 10px;
-    background-color: var(--surface);
-    border: 1px solid var(--outline);
-    color: var(--on-surface);
+    background-color: var(--md-sys-color-surface);
+    border: 1px solid var(--md-sys-color-outline);
+    color: var(--md-sys-color-on-surface);
     border-radius: 10px;
 }
 
@@ -216,7 +216,7 @@ textarea {
 
 input:focus-visible,
 textarea:focus-visible {
-    outline-color: var(--secondary);
+    outline-color: var(--md-sys-color-secondary);
 }
 
 form>button {
