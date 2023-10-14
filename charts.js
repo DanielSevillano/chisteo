@@ -1,7 +1,7 @@
-import { BarController, BarElement, CategoryScale, Chart, LinearScale, LineController, LineElement, PointElement } from "https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.js/+esm";
+import { BarController, BarElement, CategoryScale, Chart, LinearScale, LineController, LineElement, PointElement, Tooltip } from "https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.js/+esm";
 export { graficaChisteo, rankingChistes };
 
-Chart.register(BarController, BarElement, LineController, LineElement, PointElement, CategoryScale, LinearScale);
+Chart.register(BarController, BarElement, LineController, LineElement, PointElement, CategoryScale, LinearScale, Tooltip);
 
 async function graficaChisteo(url, id) {
     const ejeX = [];
