@@ -1,5 +1,9 @@
 @import url(common.css);
 
+h1 {
+    margin-right: auto;
+}
+
 /********************
 Cita
 ********************/
@@ -48,7 +52,7 @@ input::file-selector-button:hover {
     cursor: pointer;
 }
 
-button.icono {
+.icono {
     display: flex;
     align-items: center;
     width: 40px;
@@ -61,6 +65,15 @@ button.icono {
 button.icono span {
     width: 100%;
     text-align: center;
+}
+
+a.icono {
+    background-color: var(--md-sys-color-primary);
+    justify-content: center;
+}
+
+a.icono svg {
+    fill: var(--md-sys-color-on-primary);
 }
 
 /********************
