@@ -1,0 +1,37 @@
+.contenedor-maneo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contenedor-maneo img {
+    width: auto;
+    max-width: 100%;
+    max-height: 200px;
+    margin: 0;
+}
+
+@media (max-width: 620px) {
+    .contenedor-maneo img {
+        max-height: 175px;
+    }
+}
+
+@media (max-width: 550px) {
+    .contenedor-maneo img {
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 470px) {
+    .contenedor-maneo img {
+        max-height: 125px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contenedor-maneo img {
+        max-height: 100px;
+    }
+}
