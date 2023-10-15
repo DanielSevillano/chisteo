@@ -99,6 +99,11 @@ function rankingChistes(datos, numeroPersonas) {
     return grafica;
 }
 
+function mostrarCita() {
+    if (cita == null) setTimeout(mostrarCita);
+    else cita.textContent = frases[Math.floor(Math.random() * frases.length)];
+}
+
 let grafica = null;
 
 // Frase célebre
@@ -113,8 +118,8 @@ const frases = [
     "Me encantan las jeringas 💉👍",
 ];
 
-const cita = document.querySelector("blockquote");
-cita.textContent = frases[Math.floor(Math.random() * frases.length)];
+let cita = document.querySelector("blockquote");
+mostrarCita();
 
 // Diálogo
 const botonTemas = document.querySelector("#temas");
