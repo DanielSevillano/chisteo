@@ -79,6 +79,10 @@ button#cerrar {
     background-color: gold;
 }
 
+input[type=color] {
+    display: block;
+}
+
 /********************
 Navegación
 ********************/

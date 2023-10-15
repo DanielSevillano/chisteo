@@ -1,21 +1,10 @@
+import { actualizarColor } from "/js/theme.js";
 import { BarController, BarElement, CategoryScale, Chart, LinearScale, PointElement } from "https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.js/+esm";
 
 Chart.register(BarController, BarElement, PointElement, CategoryScale, LinearScale);
 
-function cambiarColor(color) {
-    if (color == localStorage.getItem("color")) return;
-    document.body.removeAttribute("class");
-
-    if (color != undefined) document.body.classList.add(color);
-    localStorage.setItem("color", color);
-
-    const datos = grafica.data.datasets;
-    if (datos.length === 2) {
-        datos[0].borderColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary");
-        datos[1].borderColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-inverse-primary");
-    } else {
-        datos[0].backgroundColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary");
-    }
+function actualizarGrafica() {
+    grafica.data.datasets[0].backgroundColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary");
     grafica.update();
 }
 
@@ -118,7 +107,7 @@ const frases = [
     "Me encantan las jeringas 💉👍",
 ];
 
-let cita = document.querySelector("blockquote");
+const cita = document.querySelector("blockquote");
 mostrarCita();
 
 // Diálogo
@@ -138,9 +127,19 @@ botonCerrar.addEventListener("click", () => {
 const botonesColor = document.querySelectorAll(".color");
 botonesColor.forEach((boton) => {
     boton.addEventListener("click", () => {
-        if (boton.id === "verde") cambiarColor(undefined);
-        else cambiarColor(boton.id);
+        if (boton.id === "verde") actualizarColor("#008000");
+        else if (boton.id === "azul") actualizarColor("#4682b4");
+        else if (boton.id === "rojo") actualizarColor("#b22222");
+        else actualizarColor("#ffd700");
+        actualizarGrafica();
     });
+});
+
+const selector = document.querySelector("#selector");
+selector.addEventListener("change", function () {
+    const color = selector.value;
+    actualizarColor(color);
+    actualizarGrafica();
 });
 
 // Chistes
