@@ -298,6 +298,10 @@ main {
     padding-inline: 20px;
 }
 
+main>*:first-child {
+    margin-top: 20px;
+}
+
 /********************
 Texto
 ********************/
