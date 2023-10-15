@@ -282,30 +282,12 @@ header {
     border-radius: 0 0 20px 20px;
 }
 
-main,
-footer {
+main {
     width: 100%;
     max-width: 100ch;
     box-sizing: border-box;
-}
-
-main {
-    gap: 20px;
-    padding-inline: 20px;
     margin-bottom: 20px;
-}
-
-footer {
-    gap: 10px;
-    margin-top: 30px;
-    padding: 10px 30px 20px 30px;
-    background-color: var(--md-sys-color-surface-variant);
-    color: var(--md-sys-color-on-surface-variant);
-    border-radius: 20px 20px 0 0;
-}
-
-section {
-    margin-top: 40px;
+    padding-inline: 20px;
 }
 
 /********************

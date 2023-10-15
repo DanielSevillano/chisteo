@@ -3,6 +3,10 @@ ul {
     line-height: 1.6;
 }
 
+section {
+    margin-top: 40px;
+}
+
 .tarjeta {
     padding: 10px 20px;
     background-color: var(--md-sys-color-secondary-container);
@@ -162,7 +166,6 @@ input[type="text"],
 textarea {
     box-sizing: border-box;
     padding: 10px;
-    background-color: var(--md-sys-color-surface);
     border: 1px solid var(--md-sys-color-outline);
     color: var(--md-sys-color-on-surface);
     border-radius: 10px;
