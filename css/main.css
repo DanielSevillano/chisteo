@@ -50,7 +50,9 @@ dialog::backdrop {
 }
 
 button#cerrar {
+    display: flex;
     margin-block: 20px;
+    margin-left: auto;
 }
 
 .contenedor-colores {
