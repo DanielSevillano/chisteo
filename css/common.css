@@ -14,6 +14,7 @@ body {
     background-color: var(--md-sys-color-background);
     color: var(--md-sys-color-on-background);
     font-family: system-ui;
+    transition: background 200ms;
 }
 
 header {
@@ -28,6 +29,7 @@ header {
     text-align: center;
     border-radius: 0 0 20px 20px;
     z-index: 1;
+    transition: background 200ms;
 }
 
 @media (min-width: 500px) {
@@ -101,7 +103,7 @@ input::file-selector-button,
 a.icono {
     border-radius: 20px;
     border-color: transparent;
-    transition: opacity 300ms;
+    transition: background 200ms, opacity 300ms;
     cursor: pointer;
 }
 

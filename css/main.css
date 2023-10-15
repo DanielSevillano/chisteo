@@ -12,6 +12,7 @@ section {
     background-color: var(--md-sys-color-secondary-container);
     color: var(--md-sys-color-on-secondary-container);
     border-radius: 20px;
+    transition: background 200ms;
 }
 
 /********************
@@ -126,6 +127,7 @@ article {
     background-color: var(--md-sys-color-secondary-container);
     color: var(--md-sys-color-on-secondary-container);
     border-radius: 20px;
+    transition: background 200ms;
 }
 
 article>p:last-child {
@@ -189,14 +191,4 @@ textarea:focus-visible {
 form>button {
     margin-inline: auto;
     font-weight: bold;
-}
-
-/********************
-Transiciones
-********************/
-
-body,
-header,
-article {
-    transition: background 300ms;
 }
