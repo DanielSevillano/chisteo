@@ -27,23 +27,23 @@ async function crearGrafica(url, id) {
                 {
                     label: "Chisteo exacto",
                     data: ejeY1,
-                    borderColor: getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary"),
+                    borderColor: getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary")
                 },
                 {
                     label: "Aproximación",
                     data: ejeY2,
-                    borderColor: getComputedStyle(document.body).getPropertyValue("--md-sys-color-inverse-primary"),
-                },
-            ],
+                    borderColor: getComputedStyle(document.body).getPropertyValue("--md-sys-color-inverse-primary")
+                }
+            ]
         },
         options: {
             maintainAspectRatio: false,
             scales: {
                 y: {
-                    beginAtZero: true,
-                },
-            },
-        },
+                    beginAtZero: true
+                }
+            }
+        }
     });
 
     return grafica;

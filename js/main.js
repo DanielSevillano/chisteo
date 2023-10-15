@@ -86,19 +86,14 @@ function rankingChistes(datos, numeroPersonas) {
                 {
                     label: "Chistes",
                     data: ejeX,
-                    backgroundColor: getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary"),
-                },
-            ],
+                    backgroundColor: getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary")
+                }
+            ]
         },
         options: {
             maintainAspectRatio: false,
-            indexAxis: "y",
-            plugins: {
-                legend: {
-                    display: false
-                }
-            },
-        },
+            indexAxis: "y"
+        }
     });
 
     return grafica;
