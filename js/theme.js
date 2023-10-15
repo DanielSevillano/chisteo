@@ -14,8 +14,8 @@ function actualizarColor(color) {
 
 const colorInicial = localStorage.getItem("color");
 
-if (colorInicial == "null") actualizarColor("#008000");
-else actualizarColor(colorInicial);
+if (colorInicial.length == 7 && colorInicial[0] == "#") actualizarColor(colorInicial);
+else actualizarColor("#008000");
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", function () {
     actualizarColor(localStorage.getItem("color"));
