@@ -55,7 +55,6 @@ async function datosChistes() {
 
     const contenedorFiltros = document.querySelector(".contenedor-filtros");
     const filtroTodos = document.querySelector("button");
-    filtroTodos.innerHTML += "<small>" + datos.length + "</small>";
     const filtros = [filtroTodos];
 
     filtroTodos.addEventListener("click", () => {
@@ -71,13 +70,11 @@ async function datosChistes() {
 
     ranking.slice(0, numeroFiltros).forEach((puesto) => {
         const autor = puesto[0];
-        const numero = puesto[1];
 
         const botonFiltro = document.createElement("button");
         const textoFiltro = document.createTextNode(autor);
         botonFiltro.type = "button";
         botonFiltro.appendChild(textoFiltro);
-        botonFiltro.innerHTML += "<small>" + numero + "</small>";
         contenedorFiltros.append(botonFiltro);
 
         filtros.push(botonFiltro);
