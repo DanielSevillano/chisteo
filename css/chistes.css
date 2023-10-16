@@ -89,8 +89,9 @@ button:hover {
 
 button:hover,
 button.seleccionado {
-    background-color: var(--md-sys-color-tertiary-container);
-    color: var(--md-sys-color-on-tertiary-container);
+    background-color: var(--md-sys-color-secondary-container);
+    border-color: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
 }
 
 small {
@@ -103,9 +104,4 @@ small {
     color: var(--md-sys-color-on-primary);
     border-radius: 100%;
     transition: background-color 200ms;
-}
-
-button.seleccionado small {
-    background-color: var(--md-sys-color-secondary);
-    color: var(--md-sys-color-on-secondary);
 }
