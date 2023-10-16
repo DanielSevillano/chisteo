@@ -142,7 +142,7 @@ article>*:first-child {
 article>p:last-child {
     width: 100%;
     margin-block: 0;
-    padding: 10px 20px;
+    padding: 12px 20px;
     box-sizing: border-box;
     background-color: var(--md-sys-color-secondary);
     color: var(--md-sys-color-on-secondary);

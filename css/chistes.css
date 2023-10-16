@@ -45,7 +45,6 @@ article div:last-child {
 
 article div p {
     margin-block: 0;
-    font-size: small;
 }
 
 article div p:first-child {
@@ -53,6 +52,7 @@ article div p:first-child {
     padding: 5px 10px;
     background-color: var(--md-sys-color-on-secondary);
     color: var(--md-sys-color-secondary);
+    font-size: 0.7rem;
     border-radius: 20px;
 }
 
