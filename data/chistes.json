@@ -698,5 +698,10 @@
         "autor": "Irene",
         "tipo": "p",
         "chiste": "¿Qué tengo si le pongo una sábana a un burro?<br/>Un burrito sabanero."
+    },
+    {
+        "autor": "Jorge",
+        "tipo": "img",
+        "chiste": "chisteo-jorge-20.jpeg"
     }
 ]

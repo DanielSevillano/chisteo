@@ -37,6 +37,10 @@ blockquote::after {
 Diálogo
 ********************/
 
+body:has(dialog[open]) {
+    overflow-y: hidden;
+}
+
 dialog {
     padding: 25px 40px;
     background-color: var(--md-sys-color-background);
@@ -50,7 +54,9 @@ dialog::backdrop {
 }
 
 button#cerrar {
+    display: flex;
     margin-block: 20px;
+    margin-left: auto;
 }
 
 .contenedor-colores {
