@@ -5,6 +5,10 @@ Chart.register(BarController, BarElement, PointElement, CategoryScale, LinearSca
 
 function actualizarGrafica() {
     grafica.data.datasets[0].backgroundColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary");
+    grafica.options.scales.x.grid.color = getComputedStyle(document.body).getPropertyValue("--md-sys-color-outline-variant");
+    grafica.options.scales.y.grid.color = getComputedStyle(document.body).getPropertyValue("--md-sys-color-outline-variant");
+    grafica.options.scales.x.ticks.color = getComputedStyle(document.body).getPropertyValue("--md-sys-color-on-background");
+    grafica.options.scales.y.ticks.color = getComputedStyle(document.body).getPropertyValue("--md-sys-color-on-background");
     grafica.update();
 }
 
@@ -81,7 +85,25 @@ function rankingChistes(datos, numeroPersonas) {
         },
         options: {
             maintainAspectRatio: false,
-            indexAxis: "y"
+            indexAxis: "y",
+            scales: {
+                x: {
+                    grid: {
+                        color: getComputedStyle(document.body).getPropertyValue("--md-sys-color-outline-variant")
+                    },
+                    ticks: {
+                        color: getComputedStyle(document.body).getPropertyValue("--md-sys-color-on-background")
+                    }
+                },
+                y: {
+                    grid: {
+                        color: getComputedStyle(document.body).getPropertyValue("--md-sys-color-outline-variant")
+                    },
+                    ticks: {
+                        color: getComputedStyle(document.body).getPropertyValue("--md-sys-color-on-background")
+                    }
+                }
+            }
         }
     });
 
@@ -141,6 +163,8 @@ selector.addEventListener("change", function () {
     actualizarColor(color);
     actualizarGrafica();
 });
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", actualizarGrafica);
 
 // Chistes
 datosChistes();

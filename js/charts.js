@@ -2,6 +2,19 @@ import { CategoryScale, Chart, Legend, LinearScale, LineController, LineElement,
 
 Chart.register(LineController, LineElement, PointElement, CategoryScale, LinearScale, Tooltip, Legend);
 
+function actualizarGrafica() {
+    graficas.forEach((grafica) => {
+        grafica.data.datasets[0].borderColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-primary");
+        grafica.data.datasets[1].borderColor = getComputedStyle(document.body).getPropertyValue("--md-sys-color-inverse-primary");
+        grafica.options.scales.x.grid.color = getComputedStyle(document.body).getPropertyValue("--md-sys-color-outline-variant");
+        grafica.options.scales.y.grid.color = getComputedStyle(document.body).getPropertyValue("--md-sys-color-outline-variant");
+        grafica.options.scales.x.ticks.color = getComputedStyle(document.body).getPropertyValue("--md-sys-color-on-background");
+        grafica.options.scales.y.ticks.color = getComputedStyle(document.body).getPropertyValue("--md-sys-color-on-background");
+        grafica.options.plugins.legend.labels.color = getComputedStyle(document.body).getPropertyValue("--md-sys-color-on-background");
+        grafica.update();
+    });
+}
+
 async function crearGrafica(url, id) {
     const ejeX = [];
     const ejeY1 = [];
@@ -38,9 +51,30 @@ async function crearGrafica(url, id) {
         },
         options: {
             maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: getComputedStyle(document.body).getPropertyValue("--md-sys-color-on-background")
+                    }
+                }
+            },
             scales: {
+                x: {
+                    grid: {
+                        color: getComputedStyle(document.body).getPropertyValue("--md-sys-color-outline-variant")
+                    },
+                    ticks: {
+                        color: getComputedStyle(document.body).getPropertyValue("--md-sys-color-on-background")
+                    }
+                },
                 y: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    grid: {
+                        color: getComputedStyle(document.body).getPropertyValue("--md-sys-color-outline-variant")
+                    },
+                    ticks: {
+                        color: getComputedStyle(document.body).getPropertyValue("--md-sys-color-on-background")
+                    }
                 }
             }
         }
@@ -61,3 +95,5 @@ datosGraficas.forEach((dato) => {
         graficas.push(grafica);
     });
 });
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", actualizarGrafica);
