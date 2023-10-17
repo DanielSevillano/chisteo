@@ -703,5 +703,15 @@
         "autor": "Jorge",
         "tipo": "img",
         "chiste": "chisteo-jorge-20.jpeg"
+    },
+    {
+        "autor": "Jorge",
+        "tipo": "img",
+        "chiste": "chisteo-jorge-21.jpg"
+    },
+    {
+        "autor": "Dani",
+        "tipo": "img",
+        "chiste": "chisteo-dani-18.jpg"
     }
 ]
