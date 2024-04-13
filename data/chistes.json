@@ -713,5 +713,10 @@
         "autor": "Dani",
         "tipo": "img",
         "chiste": "chisteo-dani-18.jpg"
+    },
+    {
+        "autor": "David",
+        "tipo": "img",
+        "chiste": "chisteo-david-17.png"
     }
 ]
