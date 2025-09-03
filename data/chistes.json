@@ -718,5 +718,15 @@
         "autor": "David",
         "tipo": "img",
         "chiste": "chisteo-david-17.png"
+    },
+    {
+        "autor": "nomura.memes",
+        "tipo": "img",
+        "chiste": "chisteo-nomura-1.png"
+    },
+    {
+        "autor": "Alejandro Tamarit",
+        "tipo": "p",
+        "chiste": "— A mí me encanta el sol.<br/>— Pues a mí el fa, y si es sostenido más todavía."
     }
 ]
